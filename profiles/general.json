@@ -1,0 +1,76 @@
+{
+    "domain": "general",
+    "description": "Universal domain-agnostic cleaning profile",
+    "email_keywords": [
+        "email",
+        "mail"
+    ],
+    "phone_keywords": [
+        "phone",
+        "mobile",
+        "contact",
+        "tel"
+    ],
+    "currency_keywords": [
+        "price",
+        "amount",
+        "cost",
+        "salary",
+        "revenue",
+        "fee",
+        "pay",
+        "total"
+    ],
+    "quantity_keywords": [
+        "quantity",
+        "qty",
+        "count",
+        "units",
+        "age"
+    ],
+    "date_keywords": [
+        "date",
+        "dob",
+        "created_at",
+        "updated_at",
+        "timestamp"
+    ],
+    "name_keywords": [
+        "customer_name",
+        "employee_name",
+        "patient_name",
+        "full_name",
+        "name"
+    ],
+    "city_keywords": [
+        "city",
+        "location",
+        "branch"
+    ],
+    "title_case_keywords": [
+        "status",
+        "category",
+        "department",
+        "payment_method"
+    ],
+    "city_aliases": {
+        "bangalore": "Bengaluru",
+        "bombay": "Mumbai",
+        "calcutta": "Kolkata",
+        "madras": "Chennai",
+        "new delhi": "Delhi"
+    },
+    "invalid_placeholders": [
+        "unknown",
+        "null",
+        "nan",
+        "n/a",
+        "none",
+        "error",
+        "-"
+    ],
+    "computed_columns": [],
+    "regex_validations": {},
+    "allowed_values": {},
+    "column_overrides": {}
+}

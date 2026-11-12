@@ -1,0 +1,75 @@
+{
+    "domain": "ecommerce",
+    "description": "E-Commerce & Retail Order Dataset Profile",
+    "email_keywords": [
+        "email"
+    ],
+    "phone_keywords": [
+        "phone",
+        "mobile",
+        "contact"
+    ],
+    "currency_keywords": [
+        "price",
+        "amount",
+        "cost",
+        "discount",
+        "revenue"
+    ],
+    "quantity_keywords": [
+        "quantity",
+        "qty"
+    ],
+    "date_keywords": [
+        "date"
+    ],
+    "name_keywords": [
+        "customer_name",
+        "full_name",
+        "name"
+    ],
+    "city_keywords": [
+        "city"
+    ],
+    "title_case_keywords": [
+        "status",
+        "category",
+        "payment_method"
+    ],
+    "city_aliases": {
+        "bangalore": "Bengaluru",
+        "bombay": "Mumbai",
+        "calcutta": "Kolkata",
+        "madras": "Chennai",
+        "new delhi": "Delhi"
+    },
+    "invalid_placeholders": [
+        "unknown",
+        "null",
+        "nan",
+        "n/a",
+        "none",
+        "error",
+        "-"
+    ],
+    "computed_columns": [
+        {
+            "target": "total_amount",
+            "formula": "quantity * unit_price_(inr)",
+            "only_if_empty": true
+        }
+    ],
+    "regex_validations": {
+        "order_id": "^ORD-\\d+$"
+    },
+    "allowed_values": {
+        "order_status": [
+            "Completed",
+            "Pending",
+            "Cancelled",
+            "Refunded",
+            "In Transit"
+        ]
+    },
+    "column_overrides": {}
+}

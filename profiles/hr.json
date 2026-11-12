@@ -1,0 +1,77 @@
+{
+    "domain": "hr",
+    "description": "Human Resources & Payroll Dataset Profile",
+    "email_keywords": [
+        "email"
+    ],
+    "phone_keywords": [
+        "phone",
+        "mobile"
+    ],
+    "currency_keywords": [
+        "salary",
+        "pay",
+        "hra",
+        "bonus",
+        "deductions",
+        "ctc"
+    ],
+    "quantity_keywords": [
+        "age",
+        "experience",
+        "leaves"
+    ],
+    "date_keywords": [
+        "date",
+        "dob",
+        "joining"
+    ],
+    "name_keywords": [
+        "employee_name",
+        "full_name",
+        "name"
+    ],
+    "city_keywords": [
+        "city",
+        "location"
+    ],
+    "title_case_keywords": [
+        "department",
+        "designation",
+        "employment_type",
+        "status"
+    ],
+    "city_aliases": {
+        "bangalore": "Bengaluru",
+        "bombay": "Mumbai",
+        "new delhi": "Delhi"
+    },
+    "invalid_placeholders": [
+        "unknown",
+        "null",
+        "nan",
+        "n/a",
+        "none",
+        "error",
+        "-"
+    ],
+    "computed_columns": [
+        {
+            "target": "net_salary",
+            "formula": "basic_pay + hra - deductions",
+            "only_if_empty": true
+        }
+    ],
+    "regex_validations": {
+        "employee_id": "^EMP-\\d+$"
+    },
+    "allowed_values": {
+        "employment_type": [
+            "Full-Time",
+            "Part-Time",
+            "Contract",
+            "Intern"
+        ]
+    },
+    "column_overrides": {}
+}

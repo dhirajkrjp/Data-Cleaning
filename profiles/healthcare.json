@@ -1,0 +1,69 @@
+{
+    "domain": "healthcare",
+    "description": "Clinical & Patient Records Profile",
+    "email_keywords": [
+        "email"
+    ],
+    "phone_keywords": [
+        "phone",
+        "mobile",
+        "emergency_contact"
+    ],
+    "currency_keywords": [
+        "fee",
+        "bill",
+        "charge",
+        "amount"
+    ],
+    "quantity_keywords": [
+        "age",
+        "weight",
+        "heart_rate"
+    ],
+    "date_keywords": [
+        "date",
+        "dob",
+        "admission",
+        "discharge"
+    ],
+    "name_keywords": [
+        "patient_name",
+        "doctor_name",
+        "name"
+    ],
+    "city_keywords": [
+        "city"
+    ],
+    "title_case_keywords": [
+        "gender",
+        "diagnosis",
+        "department",
+        "status"
+    ],
+    "city_aliases": {
+        "bangalore": "Bengaluru",
+        "bombay": "Mumbai"
+    },
+    "invalid_placeholders": [
+        "unknown",
+        "null",
+        "nan",
+        "n/a",
+        "none",
+        "error",
+        "-"
+    ],
+    "computed_columns": [],
+    "regex_validations": {
+        "patient_id": "^PAT-\\d+$",
+        "blood_group": "^(A|B|AB|O)[+-]$"
+    },
+    "allowed_values": {
+        "gender": [
+            "Male",
+            "Female",
+            "Other"
+        ]
+    },
+    "column_overrides": {}
+}
