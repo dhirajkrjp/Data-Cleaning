@@ -1,0 +1,663 @@
+
+=== STARTING DATA CLEANING AUDIT (Total Raw Rows: 340) ===
+
+[Row 002] REMOVED (BAD/MISSING) -> order_id=ORD-10001 | customer_name=Ayaan Sharma | email_address=ayaan.sharma95@yahoo.com | phone_number=+91-9342331444
+          └── Reason: unit_price_(inr): Missing, total_amount: Missing
+[Row 003] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10002 | customer_name=Aadhya Bhatia | email_address=aadhya.bhatia98@gmail.com | phone_number=+91-8461364854
+          └── Auto-Fixed: phone_number: 8461364854 -> +91-8461364854, city: bengaluru -> Bengaluru, unit_price_(inr): Rs. 4000 -> 4000, order_date: 09/28/2025 -> 2025-09-28
+[Row 004] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10003 | customer_name=Vikram Gupta | email_address=vikram.gupta47@gmail.com | phone_number=+91-7196814233
+          └── Auto-Fixed: email_address: lowercased, phone_number: 7196814233 -> +91-7196814233, unit_price_(inr): Rs. 27500 -> 27500, order_date: 16/06/2025 -> 2025-06-16, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 005] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10004 | customer_name=Arjun Mishra | email_address=arjun.mishra21@yahoo.com | phone_number=+91-9748778024
+          └── Auto-Fixed: phone_number: +91 9748778024 -> +91-9748778024
+[Row 006] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10005 | customer_name=Saanvi Das | email_address=saanvi.das19@company.in | phone_number=+91-9411057787
+          └── Auto-Fixed: phone_number: +91-94110-57787 -> +91-9411057787, unit_price_(inr): ₹2,200 -> 2200, order_date: 04/04/2025 -> 2025-04-04, order_status: completed -> Completed
+[Row 007] REMOVED (BAD/MISSING) -> order_id=ORD-10006 | customer_name=Ananya Jain | email_address=ananya.jain49@company.in | phone_number=+91-8079815404
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 008] REMOVED (BAD/MISSING) -> order_id=ORD-10007 | customer_name=Divya Sharma | email_address=divya.sharma65@outlook.com | phone_number=+91-7457031004
+          └── Reason: order_date: Missing
+[Row 009] REMOVED (BAD/MISSING) -> order_id=ORD-10008 | customer_name=Kavita Sharma | email_address=kavita.sharma31@outlook.com | phone_number=+91-7338258951
+          └── Reason: quantity: Missing, total_amount: Missing, order_date: Missing
+[Row 010] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10009 | customer_name=Swati Pandey | email_address=swati.pandey97@gmail.com | phone_number=+91-8338811290
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-83388-11290 -> +91-8338811290, unit_price_(inr): ₹15,000 -> 15000, order_date: 24-Aug-2025 -> 2025-08-24
+[Row 011] REMOVED (BAD/MISSING) -> order_id=ORD-10010 | customer_name=Vihaan Reddy | email_address=EMPTY | phone_number=+91-9208283728
+          └── Reason: email_address: Missing
+[Row 012] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10011 | customer_name=Reyansh Bose | email_address=reyansh.bose94@company.in | phone_number=+91-9775320897
+          └── Auto-Fixed: phone_number: 9775320897 -> +91-9775320897, unit_price_(inr): ₹75,000 -> 75000, total_amount: ₹75,000.00 -> 75000
+[Row 013] REMOVED (BAD/MISSING) -> order_id=ORD-10012 | customer_name=Karan Jain | email_address=karan.jain84@gmail.com | phone_number=+91-7400560567
+          └── Reason: city: Missing
+[Row 014] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10013 | customer_name=Sneha Sen | email_address=sneha.sen85@gmail.com | phone_number=+91-8274350418
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-82743-50418 -> +91-8274350418, unit_price_(inr): ₹74,500 -> 74500, order_status: refunded -> Refunded
+[Row 015] REMOVED (BAD/MISSING) -> order_id=ORD-10014 | customer_name=Diya Gupta | email_address=diya.gupta52@yahoo.com | phone_number=+91-8057486868
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 016] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10015 | customer_name=Myra Mehta | email_address=myra.mehta41@company.in | phone_number=+91-7040009587
+          └── Auto-Fixed: customer_name: myra mehta -> Myra Mehta, phone_number: 7040009587 -> +91-7040009587, unit_price_(inr): ₹9,000 -> 9000, order_date: 03/12/2025 -> 2025-12-03, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 017] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10016 | customer_name=Ananya Bhatia | email_address=ananya.bhatia84@gmail.com | phone_number=+91-9381998678
+          └── Auto-Fixed: email_address: lowercased, phone_number: 9381998678 -> +91-9381998678, order_date: 04-Aug-2025 -> 2025-08-04, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 018] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10017 | customer_name=Manish Saxena | email_address=manish.saxena12@gmail.com | phone_number=+91-7189351213
+          └── Auto-Fixed: customer_name: MANISH  SAXENA -> Manish Saxena, phone_number: 7189351213 -> +91-7189351213, order_status: COMPLETED -> Completed
+[Row 019] REMOVED (BAD/MISSING) -> order_id=ORD-10018 | customer_name=Neha Yadav | email_address=neha.yadav40@gmail.com | phone_number=+91-7171347175
+          └── Reason: order_date: Missing
+[Row 020] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10019 | customer_name=Diya Sinha | email_address=diya.sinha53@outlook.com | phone_number=+91-8065870178
+          └── Auto-Fixed: phone_number: 8065870178 -> +91-8065870178, city: bengaluru -> Bengaluru, category: accessories -> Accessories, unit_price_(inr): ₹4,500 -> 4500, order_date: 11/09/2025 -> 2025-09-11
+[Row 021] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10020 | customer_name=Vivaan Bose | email_address=vivaan.bose99@gmail.com | phone_number=+91-8716605598
+          └── Auto-Fixed: customer_name: VIVAAN  BOSE -> Vivaan Bose, phone_number: 8716605598 -> +91-8716605598, category: electronics -> Electronics, total_amount: ₹7,000.00 -> 7000, order_date: 03/09/2026 -> 2026-09-03, payment_method: credit card -> Credit Card
+[Row 022] REMOVED (BAD/MISSING) -> order_id=ORD-10021 | customer_name=Suresh Agarwal | email_address=suresh.agarwal33@yahoo.com | phone_number=+91-9233040884
+          └── Reason: order_status: Missing
+[Row 023] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10022 | customer_name=Rahul Mehta | email_address=rahul.mehta54@yahoo.com | phone_number=+91-7747441732
+          └── Auto-Fixed: phone_number: +91 7747441732 -> +91-7747441732, unit_price_(inr): Rs. 8500 -> 8500, order_date: 26/11/2025 -> 2025-11-26
+[Row 024] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10023 | customer_name=Manish Saxena | email_address=manish.saxena85@yahoo.com | phone_number=+91-9718460279
+          └── Auto-Fixed: phone_number: 9718460279 -> +91-9718460279, unit_price_(inr): Rs. 16000 -> 16000, total_amount: ₹32,000.00 -> 32000
+[Row 025] REMOVED (BAD/MISSING) -> order_id=ORD-10024 | customer_name=Divya Desai | email_address=divya.desai64@company.in | phone_number=+91-9953315788
+          └── Reason: quantity: Missing, total_amount: Missing, order_date: Missing, payment_method: Missing
+[Row 026] REMOVED (BAD/MISSING) -> order_id=ORD-10025 | customer_name=Krishna Jain | email_address=krishna.jain77@gmail.com | phone_number=+91-8900838388
+          └── Reason: payment_method: Missing
+[Row 027] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10026 | customer_name=Kiara Nair | email_address=kiara.nair35@yahoo.com | phone_number=+91-7346078411
+          └── Auto-Fixed: phone_number: 7346078411 -> +91-7346078411, city: New Delhi -> Delhi, unit_price_(inr): 4000 -> 4000, payment_method: credit card -> Credit Card
+[Row 028] REMOVED (BAD/MISSING) -> order_id=ORD-10027 | customer_name=Meena Sen | email_address=meena.sen49@gmail.com | phone_number=+91-8282531582
+          └── Reason: city: Missing
+[Row 029] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10028 | customer_name=Kavita Sharma | email_address=kavita.sharma93@company.in | phone_number=+91-7548157187
+          └── Auto-Fixed: phone_number: 7548157187 -> +91-7548157187
+[Row 030] REMOVED (BAD/MISSING) -> order_id=ORD-10029 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-8195103064
+          └── Reason: customer_name: Missing, email_address: Missing, city: Missing, unit_price_(inr): Missing, order_status: Missing
+[Row 031] REMOVED (BAD/MISSING) -> order_id=ORD-10030 | customer_name=Vivaan Reddy | email_address=EMPTY | phone_number=+91-7542114964
+          └── Reason: email_address: Missing
+[Row 032] REMOVED (BAD/MISSING) -> order_id=ORD-10031 | customer_name=Reyansh Yadav | email_address=reyansh.yadav51@company.in | phone_number=+91-9543040948
+          └── Reason: order_status: Missing
+[Row 033] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10032 | customer_name=Aarav Pandey | email_address=aarav.pandey47@company.in | phone_number=+91-7657091982
+          └── Auto-Fixed: phone_number: 7657091982 -> +91-7657091982, city: hyderabad -> Hyderabad, order_date: 03/23/2026 -> 2026-03-23, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 034] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10033 | customer_name=Rahul Pandey | email_address=rahul.pandey58@outlook.com | phone_number=+91-9621354709
+          └── Auto-Fixed: customer_name: RAHUL  PANDEY -> Rahul Pandey, phone_number: 9621354709 -> +91-9621354709, unit_price_(inr): 18500 -> 18500, order_date: 10/14/2025 -> 2025-10-14, order_status: pending -> Pending
+[Row 035] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10034 | customer_name=Swati Patel | email_address=swati.patel72@company.in | phone_number=+91-9774131811
+          └── Auto-Fixed: customer_name: swati patel -> Swati Patel, phone_number: 9774131811 -> +91-9774131811, category: furniture -> Furniture, unit_price_(inr): 32000 -> 32000, order_date: 13/01/2026 -> 2026-01-13, order_status: refunded -> Refunded
+[Row 036] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10035 | customer_name=Sneha Rao | email_address=sneha.rao35@company.in | phone_number=+91-7827143233
+          └── Auto-Fixed: phone_number: +91-78271-43233 -> +91-7827143233, city: patna -> Patna, unit_price_(inr): ₹1,200 -> 1200, order_date: 22-Jun-2026 -> 2026-06-22, order_status: completed -> Completed
+[Row 037] REMOVED (BAD/MISSING) -> order_id=ORD-10036 | customer_name=Anika Reddy | email_address=anika.reddy17@gmail.com | phone_number=+91-9376658660
+          └── Reason: order_date: Missing, payment_method: Missing
+[Row 038] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10037 | customer_name=Ayaan Tiwari | email_address=ayaan.tiwari81@gmail.com | phone_number=+91-9417377633
+          └── Auto-Fixed: customer_name: ayaan tiwari -> Ayaan Tiwari, email_address: lowercased, phone_number: +91-94173-77633 -> +91-9417377633, category: accessories -> Accessories, order_date: 25/01/2026 -> 2026-01-25, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 039] REMOVED (BAD/MISSING) -> order_id=ORD-10038 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-9618344818
+          └── Reason: customer_name: Missing, email_address: Missing, city: Missing, payment_method: Missing
+[Row 040] REMOVED (BAD/MISSING) -> order_id=ORD-10039 | customer_name=Suresh Saxena | email_address=suresh.saxena90@outlook.com | phone_number=+91-8002547591
+          └── Reason: unit_price_(inr): Missing
+[Row 041] REMOVED (BAD/MISSING) -> order_id=ORD-10040 | customer_name=Suresh Rao | email_address=suresh.rao16@company.in | phone_number=+91-8728760924
+          └── Reason: order_date: Missing
+[Row 042] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10041 | customer_name=Riya Yadav | email_address=riya.yadav67@company.in | phone_number=+91-7779489931
+          └── Auto-Fixed: customer_name: riya yadav -> Riya Yadav, phone_number: 7779489931 -> +91-7779489931, city: pune -> Pune, unit_price_(inr): Rs. 18500 -> 18500, order_date: 14/06/2025 -> 2025-06-14, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 043] REMOVED (BAD/MISSING) -> order_id=ORD-10042 | customer_name=Pooja Tiwari | email_address=EMPTY | phone_number=+91-8084044802
+          └── Reason: email_address: Missing, quantity: Missing, total_amount: Missing
+[Row 044] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10043 | customer_name=Swati Chopra | email_address=swati.chopra98@company.in | phone_number=+91-7562697526
+          └── Auto-Fixed: phone_number: +91 7562697526 -> +91-7562697526, total_amount: ₹33,000.00 -> 33000
+[Row 045] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10044 | customer_name=Aadhya Tiwari | email_address=aadhya.tiwari83@gmail.com | phone_number=+91-8253535854
+          └── Auto-Fixed: phone_number: 8253535854 -> +91-8253535854, unit_price_(inr): 2200 -> 2200, total_amount: ₹11,000.00 -> 11000, order_date: 06/09/2026 -> 2026-09-06, order_status: COMPLETED -> Completed
+[Row 046] REMOVED (BAD/MISSING) -> order_id=ORD-10045 | customer_name=Riya Kulkarni | email_address=riya.kulkarni35@gmail.com | phone_number=+91-8282287615
+          └── Reason: unit_price_(inr): Missing
+[Row 047] REMOVED (BAD/MISSING) -> order_id=ORD-10046 | customer_name=Kiara Yadav | email_address=kiara.yadav6@company.in | phone_number=+91-8637375316
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 048] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10047 | customer_name=Swati Thakur | email_address=swati.thakur84@company.in | phone_number=+91-8138264176
+          └── Auto-Fixed: phone_number: +91-81382-64176 -> +91-8138264176, city: patna -> Patna, order_date: 05/15/2026 -> 2026-05-15
+[Row 049] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10048 | customer_name=Kiara Das | email_address=kiara.das96@yahoo.com | phone_number=+91-9721926191
+          └── Auto-Fixed: phone_number: 9721926191 -> +91-9721926191, unit_price_(inr): Rs. 700 -> 700, order_date: 03/01/2026 -> 2026-01-03, order_status: COMPLETED -> Completed, total_amount: Calculated 700
+[Row 050] REMOVED (BAD/MISSING) -> order_id=ORD-10049 | customer_name=Swati Desai | email_address=swati.desai23@yahoo.com | phone_number=+91-9661635754
+          └── Reason: order_date: Missing, order_status: Missing
+[Row 051] REMOVED (BAD/MISSING) -> order_id=ORD-10050 | customer_name=Arjun Bhatia | email_address=arjun.bhatia82@outlook.com | phone_number=+91-8962094851
+          └── Reason: order_status: Missing
+[Row 052] REMOVED (BAD/MISSING) -> order_id=ORD-10051 | customer_name=Riya Sharma | email_address=riya.sharma78@gmail.com | phone_number=+91-8229194523
+          └── Reason: city: Missing, order_status: Missing
+[Row 053] REMOVED (BAD/MISSING) -> order_id=ORD-10052 | customer_name=Navya Jain | email_address=navya.jain12@yahoo.com | phone_number=+91-8784572192
+          └── Reason: unit_price_(inr): Missing, order_date: Missing
+[Row 054] REMOVED (BAD/MISSING) -> order_id=ORD-10053 | customer_name=Ayaan Bhatia | email_address=ayaan.bhatia87@yahoo.com | phone_number=+91-9393639475
+          └── Reason: quantity: Missing, total_amount: Missing, order_status: Missing
+[Row 055] REMOVED (BAD/MISSING) -> order_id=ORD-10054 | customer_name=Reyansh Bose | email_address=EMPTY | phone_number=+91-9411226340
+          └── Reason: email_address: Missing
+[Row 056] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10055 | customer_name=Reyansh Reddy | email_address=reyansh.reddy48@company.in | phone_number=+91-9320109101
+          └── Auto-Fixed: phone_number: 9320109101 -> +91-9320109101, city: hyderabad -> Hyderabad, unit_price_(inr): ₹9,500 -> 9500
+[Row 057] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10056 | customer_name=Karan Bhatia | email_address=karan.bhatia88@gmail.com | phone_number=+91-9769510048
+          └── Auto-Fixed: phone_number: 9769510048 -> +91-9769510048, city: PATNA -> Patna, unit_price_(inr): ₹75,000 -> 75000
+[Row 058] REMOVED (BAD/MISSING) -> order_id=ORD-10057 | customer_name=Krishna Jain | email_address=EMPTY | phone_number=+91-7889734128
+          └── Reason: email_address: Missing
+[Row 059] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10058 | customer_name=Vivaan Singh | email_address=vivaan.singh76@yahoo.com | phone_number=+91-7225052083
+          └── Auto-Fixed: customer_name: vivaan singh -> Vivaan Singh, phone_number: +91-72250-52083 -> +91-7225052083, city: New Delhi -> Delhi, total_amount: ₹92,500.00 -> 92500
+[Row 060] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10059 | customer_name=Swati Iyer | email_address=swati.iyer62@gmail.com | phone_number=+91-7463692519
+          └── Auto-Fixed: phone_number: +91 7463692519 -> +91-7463692519, city: chennai -> Chennai, category: furniture -> Furniture, unit_price_(inr): ₹31,500 -> 31500, order_date: 29/11/2025 -> 2025-11-29, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 061] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10060 | customer_name=Divya Agarwal | email_address=divya.agarwal84@gmail.com | phone_number=+91-7923517027
+          └── Auto-Fixed: phone_number: 7923517027 -> +91-7923517027, city: hyderabad -> Hyderabad, unit_price_(inr): 32000 -> 32000, order_date: 14/03/2026 -> 2026-03-14, order_status: pending -> Pending, total_amount: Calculated 160000
+[Row 062] REMOVED (BAD/MISSING) -> order_id=ORD-10061 | customer_name=Ishaan Bose | email_address=EMPTY | phone_number=+91-7400420225
+          └── Reason: email_address: Missing, order_status: Missing
+[Row 063] REMOVED (BAD/MISSING) -> order_id=ORD-10062 | customer_name=Vihaan Iyer | email_address=vihaan.iyer65@gmail.com | phone_number=+91-7963124353
+          └── Reason: order_status: Missing
+[Row 064] REMOVED (BAD/MISSING) -> order_id=ORD-10063 | customer_name=Suresh Thakur | email_address=suresh.thakur24@gmail.com | phone_number=+91-8459535801
+          └── Reason: payment_method: Missing
+[Row 065] REMOVED (BAD/MISSING) -> order_id=ORD-10064 | customer_name=Priya Kumar | email_address=priya.kumar77@gmail.com | phone_number=+91-7676070354
+          └── Reason: city: Missing
+[Row 066] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10065 | customer_name=Sneha Malhotra | email_address=sneha.malhotra68@company.in | phone_number=+91-8697643337
+          └── Auto-Fixed: customer_name: SNEHA  MALHOTRA -> Sneha Malhotra, phone_number: +91-86976-43337 -> +91-8697643337, total_amount: ₹150,000.00 -> 150000, order_date: 25-May-2026 -> 2026-05-25, order_status: COMPLETED -> Completed
+[Row 067] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10066 | customer_name=Vikram Chauhan | email_address=vikram.chauhan10@outlook.com | phone_number=+91-8873548915
+          └── Auto-Fixed: phone_number: 8873548915 -> +91-8873548915, unit_price_(inr): 32500 -> 32500
+[Row 068] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10067 | customer_name=Anita Bhatia | email_address=anita.bhatia56@gmail.com | phone_number=+91-9529182928
+          └── Auto-Fixed: phone_number: +91-95291-82928 -> +91-9529182928, unit_price_(inr): Rs. 3500 -> 3500, order_date: 27/04/2025 -> 2025-04-27
+[Row 069] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10068 | customer_name=Amit Rao | email_address=amit.rao31@yahoo.com | phone_number=+91-7745172634
+          └── Auto-Fixed: phone_number: +91 7745172634 -> +91-7745172634, unit_price_(inr): 5500 -> 5500, order_date: 05-Apr-2026 -> 2026-04-05
+[Row 070] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10069 | customer_name=Rahul Singh | email_address=rahul.singh36@outlook.com | phone_number=+91-7318646463
+          └── Auto-Fixed: phone_number: +91 7318646463 -> +91-7318646463, category: furniture -> Furniture, total_amount: ₹63,000.00 -> 63000, order_date: 01/09/2026 -> 2026-09-01
+[Row 071] REMOVED (BAD/MISSING) -> order_id=ORD-10070 | customer_name=Karan Thakur | email_address=karan.thakur78@outlook.com | phone_number=+91-7265745534
+          └── Reason: order_date: Missing
+[Row 072] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10071 | customer_name=Neha Chopra | email_address=neha.chopra87@outlook.com | phone_number=+91-9780155330
+          └── Auto-Fixed: phone_number: 9780155330 -> +91-9780155330, city: patna -> Patna, unit_price_(inr): Rs. 1200 -> 1200, order_date: 09/10/2026 -> 2026-10-09
+[Row 073] REMOVED (BAD/MISSING) -> order_id=ORD-10072 | customer_name=Meena Bose | email_address=meena.bose17@company.in | phone_number=+91-8329644079
+          └── Reason: order_status: Missing
+[Row 074] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10073 | customer_name=Manish Chopra | email_address=manish.chopra44@yahoo.com | phone_number=+91-7972994972
+          └── Auto-Fixed: customer_name: manish chopra -> Manish Chopra, phone_number: 7972994972 -> +91-7972994972, city: New Delhi -> Delhi, order_date: 08-Feb-2025 -> 2025-02-08
+[Row 075] REMOVED (BAD/MISSING) -> order_id=ORD-10074 | customer_name=Suresh Mehta | email_address=suresh.mehta22@gmail.com | phone_number=+91-8564654057
+          └── Reason: unit_price_(inr): Missing, order_date: Missing
+[Row 076] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10075 | customer_name=Deepak Bhatia | email_address=deepak.bhatia65@company.in | phone_number=+91-7857695227
+          └── Auto-Fixed: phone_number: 7857695227 -> +91-7857695227, category: accessories -> Accessories, order_status: COMPLETED -> Completed, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 077] REMOVED (BAD/MISSING) -> order_id=ORD-10076 | customer_name=Karan Sinha | email_address=karan.sinha29@gmail.com | phone_number=+91-7114547603
+          └── Reason: order_status: Missing
+[Row 078] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10077 | customer_name=Ishaan Singh | email_address=ishaan.singh90@company.in | phone_number=+91-9014812671
+          └── Auto-Fixed: customer_name: ishaan singh -> Ishaan Singh, phone_number: 9014812671 -> +91-9014812671, category: storage -> Storage, order_date: 25/06/2026 -> 2026-06-25, order_status: pending -> Pending
+[Row 079] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10078 | customer_name=Navya Malhotra | email_address=navya.malhotra59@gmail.com | phone_number=+91-9146750150
+          └── Auto-Fixed: customer_name: navya malhotra -> Navya Malhotra, email_address: lowercased, phone_number: 9146750150 -> +91-9146750150, unit_price_(inr): ₹4,500 -> 4500, order_date: 04-Sep-2025 -> 2025-09-04, order_status: COMPLETED -> Completed
+[Row 080] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10079 | customer_name=Swati Chopra | email_address=swati.chopra65@gmail.com | phone_number=+91-9019214800
+          └── Auto-Fixed: customer_name: swati chopra -> Swati Chopra, email_address: lowercased, phone_number: +91 9019214800 -> +91-9019214800, city: mumbai -> Mumbai
+[Row 081] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10080 | customer_name=Krishna Verma | email_address=krishna.verma88@yahoo.com | phone_number=+91-9713284816
+          └── Auto-Fixed: phone_number: 9713284816 -> +91-9713284816, city: delhi -> Delhi, unit_price_(inr): Rs. 4000 -> 4000, order_date: 07/24/2025 -> 2025-07-24, payment_method: Cash on Delivery -> Cash On Delivery, total_amount: Calculated 20000
+[Row 082] REMOVED (BAD/MISSING) -> order_id=ORD-10081 | customer_name=Manish Mehta | email_address=manish.mehta5@outlook.com | phone_number=+91-8533192415
+          └── Reason: city: Missing, payment_method: Missing
+[Row 083] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10082 | customer_name=Kavita Chopra | email_address=kavita.chopra94@gmail.com | phone_number=+91-7775054695
+          └── Auto-Fixed: phone_number: +91 7775054695 -> +91-7775054695, category: accessories -> Accessories, unit_price_(inr): 2200 -> 2200, total_amount: ₹4,400.00 -> 4400, order_date: 31/03/2026 -> 2026-03-31
+[Row 084] REMOVED (BAD/MISSING) -> order_id=ORD-10083 | customer_name=Anita Desai | email_address=anita.desai10@gmail.com | phone_number=+91-9203687670
+          └── Reason: city: Missing
+[Row 085] REMOVED (BAD/MISSING) -> order_id=ORD-10084 | customer_name=Suresh Singh | email_address=suresh.singh57@outlook.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, payment_method: Missing
+[Row 086] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10085 | customer_name=Saanvi Mishra | email_address=saanvi.mishra26@company.in | phone_number=+91-8941508568
+          └── Auto-Fixed: customer_name: SAANVI  MISHRA -> Saanvi Mishra, phone_number: 8941508568 -> +91-8941508568, city: delhi -> Delhi, unit_price_(inr): Rs. 33000 -> 33000, order_status: pending -> Pending, total_amount: Calculated 99000
+[Row 087] REMOVED (BAD/MISSING) -> order_id=ORD-10086 | customer_name=Diya Jain | email_address=diya.jain18@yahoo.com | phone_number=+91-8550038771
+          └── Reason: quantity: Missing, total_amount: Missing, payment_method: Missing
+[Row 088] REMOVED (BAD/MISSING) -> order_id=ORD-10087 | customer_name=Swati Desai | email_address=swati.desai17@gmail.com | phone_number=+91-8932625737
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 089] REMOVED (BAD/MISSING) -> order_id=ORD-10088 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-7968387506
+          └── Reason: customer_name: Missing, email_address: Missing
+[Row 090] REMOVED (BAD/MISSING) -> order_id=ORD-10089 | customer_name=Meena Yadav | email_address=meena.yadav44@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, order_status: Missing
+[Row 091] REMOVED (BAD/MISSING) -> order_id=ORD-10090 | customer_name=Navya Saxena | email_address=navya.saxena39@company.in | phone_number=+91-7678950361
+          └── Reason: order_date: Missing
+[Row 092] REMOVED (BAD/MISSING) -> order_id=ORD-10091 | customer_name=Manish Chauhan | email_address=manish.chauhan35@gmail.com | phone_number=+91-7217348079
+          └── Reason: payment_method: Missing
+[Row 093] REMOVED (BAD/MISSING) -> order_id=ORD-10092 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-8688962331
+          └── Reason: customer_name: Missing, email_address: Missing
+[Row 094] REMOVED (BAD/MISSING) -> order_id=ORD-10093 | customer_name=Sneha Singh | email_address=sneha.singh47@company.in | phone_number=+91-9412985084
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 095] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10094 | customer_name=Krishna Malhotra | email_address=krishna.malhotra72@outlook.com | phone_number=+91-7854947088
+          └── Auto-Fixed: phone_number: 7854947088 -> +91-7854947088, category: electronics -> Electronics, order_date: 02-Jun-2025 -> 2025-06-02, order_status: refunded -> Refunded
+[Row 096] REMOVED (BAD/MISSING) -> order_id=ORD-10095 | customer_name=Rahul Thakur | email_address=rahul.thakur95@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, order_status: Missing
+[Row 097] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10096 | customer_name=Suresh Saxena | email_address=suresh.saxena74@gmail.com | phone_number=+91-9063511828
+          └── Auto-Fixed: customer_name: SURESH  SAXENA -> Suresh Saxena, email_address: lowercased, phone_number: +91-90635-11828 -> +91-9063511828, city: delhi -> Delhi
+[Row 098] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10097 | customer_name=Rohan Singh | email_address=rohan.singh79@gmail.com | phone_number=+91-7267496095
+          └── Auto-Fixed: email_address: lowercased, phone_number: 7267496095 -> +91-7267496095, unit_price_(inr): Rs. 5000 -> 5000, order_date: 30/06/2026 -> 2026-06-30, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 099] REMOVED (BAD/MISSING) -> order_id=ORD-10098 | customer_name=Anita Saxena | email_address=anita.saxena39@gmail.com | phone_number=+91-8278244804
+          └── Reason: city: Missing
+[Row 100] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10099 | customer_name=Pooja Tiwari | email_address=pooja.tiwari38@yahoo.com | phone_number=+91-7339428835
+          └── Auto-Fixed: phone_number: 7339428835 -> +91-7339428835, city: PATNA -> Patna
+[Row 101] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10100 | customer_name=Kiara Verma | email_address=kiara.verma7@yahoo.com | phone_number=+91-9028959334
+          └── Auto-Fixed: phone_number: +91 9028959334 -> +91-9028959334, order_date: 07/24/2025 -> 2025-07-24, order_status: pending -> Pending
+[Row 102] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10101 | customer_name=Anika Das | email_address=anika.das30@gmail.com | phone_number=+91-7160194739
+          └── Auto-Fixed: customer_name: anika das -> Anika Das, email_address: lowercased, phone_number: 7160194739 -> +91-7160194739, city: delhi -> Delhi, order_date: 10/24/2025 -> 2025-10-24, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 103] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10102 | customer_name=Deepak Mishra | email_address=deepak.mishra59@outlook.com | phone_number=+91-9121337685
+          └── Auto-Fixed: customer_name: deepak mishra -> Deepak Mishra, phone_number: 9121337685 -> +91-9121337685, city: New Delhi -> Delhi, unit_price_(inr): ₹3,500 -> 3500, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 104] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10103 | customer_name=Deepak Bose | email_address=deepak.bose55@company.in | phone_number=+91-9874432021
+          └── Auto-Fixed: phone_number: +91-98744-32021 -> +91-9874432021, unit_price_(inr): Rs. 4000 -> 4000, order_date: 04/12/2025 -> 2025-12-04
+[Row 105] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10104 | customer_name=Myra Das | email_address=myra.das60@gmail.com | phone_number=+91-9158308965
+          └── Auto-Fixed: phone_number: +91 9158308965 -> +91-9158308965, total_amount: ₹4,400.00 -> 4400, order_date: 06/06/2025 -> 2025-06-06
+[Row 106] REMOVED (BAD/MISSING) -> order_id=ORD-10105 | customer_name=Rohan Sen | email_address=rohan.sen86@gmail.com | phone_number=+91-9922046273
+          └── Reason: city: Missing
+[Row 107] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10106 | customer_name=Deepak Chauhan | email_address=deepak.chauhan57@gmail.com | phone_number=+91-9504600194
+          └── Auto-Fixed: customer_name: deepak chauhan -> Deepak Chauhan, email_address: lowercased, phone_number: +91-95046-00194 -> +91-9504600194, city: chennai -> Chennai, unit_price_(inr): ₹1,200 -> 1200, order_date: 27/07/2026 -> 2026-07-27, order_status: pending -> Pending
+[Row 108] REMOVED (BAD/MISSING) -> order_id=ORD-10107 | customer_name=Pooja Nair | email_address=pooja.nair10@gmail.com | phone_number=+91-7273846739
+          └── Reason: payment_method: Missing
+[Row 109] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10108 | customer_name=Vikram Mehta | email_address=vikram.mehta18@gmail.com | phone_number=+91-7766538381
+          └── Auto-Fixed: customer_name: vikram mehta -> Vikram Mehta, email_address: lowercased, phone_number: +91 7766538381 -> +91-7766538381, order_date: 12/07/2026 -> 2026-07-12
+[Row 110] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10109 | customer_name=Kiara Bhatia | email_address=kiara.bhatia5@gmail.com | phone_number=+91-7067198189
+          └── Auto-Fixed: phone_number: +91 7067198189 -> +91-7067198189, city: Bangalore -> Bengaluru, total_amount: ₹142,500.00 -> 142500, order_date: 15/02/2025 -> 2025-02-15
+[Row 111] REMOVED (BAD/MISSING) -> order_id=ORD-10110 | customer_name=Vihaan Singh | email_address=vihaan.singh41@gmail.com | phone_number=+91-8377246195
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 112] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10111 | customer_name=Sneha Chauhan | email_address=sneha.chauhan68@company.in | phone_number=+91-7640884760
+          └── Auto-Fixed: phone_number: +91 7640884760 -> +91-7640884760, unit_price_(inr): Rs. 18500 -> 18500, order_date: 01-Mar-2025 -> 2025-03-01
+[Row 113] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10112 | customer_name=Vikram Reddy | email_address=vikram.reddy58@gmail.com | phone_number=+91-7818112342
+          └── Auto-Fixed: customer_name: VIKRAM  REDDY -> Vikram Reddy, phone_number: +91-78181-12342 -> +91-7818112342, city: mumbai -> Mumbai, unit_price_(inr): ₹1,700 -> 1700
+[Row 114] REMOVED (BAD/MISSING) -> order_id=ORD-10113 | customer_name=Navya Thakur | email_address=navya.thakur96@gmail.com | phone_number=+91-8041929790
+          └── Reason: payment_method: Missing
+[Row 115] REMOVED (BAD/MISSING) -> order_id=ORD-10114 | customer_name=Divya Malhotra | email_address=divya.malhotra27@outlook.com | phone_number=+91-9416025300
+          └── Reason: order_status: Missing
+[Row 116] REMOVED (BAD/MISSING) -> order_id=ORD-10115 | customer_name=Myra Kulkarni | email_address=myra.kulkarni59@company.in | phone_number=+91-7726990714
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 117] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10116 | customer_name=Aarav Desai | email_address=aarav.desai91@gmail.com | phone_number=+91-8958546579
+          └── Auto-Fixed: customer_name: aarav desai -> Aarav Desai, phone_number: +91-89585-46579 -> +91-8958546579, city: PATNA -> Patna, unit_price_(inr): 76000 -> 76000, order_date: 19/07/2026 -> 2026-07-19, payment_method: Cash on Delivery -> Cash On Delivery, total_amount: Calculated 380000
+[Row 118] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10117 | customer_name=Rajesh Iyer | email_address=rajesh.iyer23@company.in | phone_number=+91-7639509845
+          └── Auto-Fixed: customer_name: rajesh iyer -> Rajesh Iyer, phone_number: +91-76395-09845 -> +91-7639509845, city: Bangalore -> Bengaluru, order_date: 20/02/2026 -> 2026-02-20, total_amount: Calculated 84000
+[Row 119] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10118 | customer_name=Navya Bose | email_address=navya.bose12@gmail.com | phone_number=+91-9044426338
+          └── Auto-Fixed: phone_number: +91 9044426338 -> +91-9044426338, city: mumbai -> Mumbai, category: electronics -> Electronics, order_date: 04/08/2025 -> 2025-08-04
+[Row 120] REMOVED (BAD/MISSING) -> order_id=ORD-10119 | customer_name=Saanvi Sinha | email_address=saanvi.sinha35@company.in | phone_number=+91-8204192904
+          └── Reason: order_date: Missing
+[Row 121] REMOVED (BAD/MISSING) -> order_id=ORD-10120 | customer_name=Deepak Reddy | email_address=deepak.reddy43@gmail.com | phone_number=+91-9960566236
+          └── Reason: city: Missing, order_date: Missing
+[Row 122] REMOVED (BLANK ROW)   -> All cells are empty
+[Row 123] REMOVED (BAD/MISSING) -> order_id=ORD-10121 | customer_name=Vivaan Das | email_address=vivaan.das30@company.in | phone_number=+91-8854772804
+          └── Reason: order_status: Missing
+[Row 124] REMOVED (BAD/MISSING) -> order_id=ORD-10122 | customer_name=Vikram Joshi | email_address=vikram.joshi57@outlook.com | phone_number=+91-7569113257
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 125] REMOVED (BAD/MISSING) -> order_id=ORD-10123 | customer_name=Vikram Sharma | email_address=vikram.sharma93@gmail.com | phone_number=+91-8042571199
+          └── Reason: payment_method: Missing
+[Row 126] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10124 | customer_name=Arjun Chopra | email_address=arjun.chopra77@company.in | phone_number=+91-7581923103
+          └── Auto-Fixed: customer_name: ARJUN  CHOPRA -> Arjun Chopra, phone_number: 7581923103 -> +91-7581923103, unit_price_(inr): 75000 -> 75000
+[Row 127] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10125 | customer_name=Siddharth Joshi | email_address=siddharth.joshi38@outlook.com | phone_number=+91-9473382684
+          └── Auto-Fixed: customer_name: SIDDHARTH  JOSHI -> Siddharth Joshi, phone_number: 9473382684 -> +91-9473382684, city: Bangalore -> Bengaluru, unit_price_(inr): ₹15,000 -> 15000, order_status: refunded -> Refunded
+[Row 128] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10126 | customer_name=Divya Sen | email_address=divya.sen53@gmail.com | phone_number=+91-8300656317
+          └── Auto-Fixed: customer_name: DIVYA  SEN -> Divya Sen, phone_number: +91-83006-56317 -> +91-8300656317, city: Bangalore -> Bengaluru, unit_price_(inr): 1700 -> 1700, order_date: 02/07/2026 -> 2026-07-02
+[Row 129] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10127 | customer_name=Neha Sen | email_address=neha.sen14@gmail.com | phone_number=+91-8524751277
+          └── Auto-Fixed: phone_number: 8524751277 -> +91-8524751277, city: delhi -> Delhi, total_amount: ₹34,000.00 -> 34000, order_status: refunded -> Refunded
+[Row 130] REMOVED (BAD/MISSING) -> order_id=ORD-10128 | customer_name=Karan Chopra | email_address=karan.chopra89@gmail.com | phone_number=+91-7105495798
+          └── Reason: payment_method: Missing
+[Row 131] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10129 | customer_name=Amit Saxena | email_address=amit.saxena41@company.in | phone_number=+91-7494287462
+          └── Auto-Fixed: customer_name: amit saxena -> Amit Saxena, phone_number: +91-74942-87462 -> +91-7494287462, unit_price_(inr): ₹16,000 -> 16000, total_amount: ₹16,000.00 -> 16000, order_date: 28/07/2026 -> 2026-07-28
+[Row 132] REMOVED (BAD/MISSING) -> order_id=ORD-10130 | customer_name=Pooja Das | email_address=pooja.das51@company.in | phone_number=EMPTY
+          └── Reason: phone_number: Missing
+[Row 133] REMOVED (BAD/MISSING) -> order_id=ORD-10131 | customer_name=Neha Joshi | email_address=neha.joshi68@company.in | phone_number=+91-8669192918
+          └── Reason: order_status: Missing
+[Row 134] REMOVED (BAD/MISSING) -> order_id=ORD-10132 | customer_name=Rahul Malhotra | email_address=rahul.malhotra89@outlook.com | phone_number=+91-9561629386
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 135] REMOVED (BAD/MISSING) -> order_id=ORD-10133 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-7230258601
+          └── Reason: customer_name: Missing, email_address: Missing, unit_price_(inr): Missing, payment_method: Missing
+[Row 136] REMOVED (BAD/MISSING) -> order_id=ORD-10134 | customer_name=Ananya Gupta | email_address=ananya.gupta38@yahoo.com | phone_number=+91-8239829538
+          └── Reason: unit_price_(inr): Missing
+[Row 137] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10135 | customer_name=Karan Chauhan | email_address=karan.chauhan39@yahoo.com | phone_number=+91-8128782794
+          └── Auto-Fixed: customer_name: KARAN  CHAUHAN -> Karan Chauhan, phone_number: +91-81287-82794 -> +91-8128782794, city: PATNA -> Patna, order_date: 17-Sep-2026 -> 2026-09-17, order_status: COMPLETED -> Completed
+[Row 138] REMOVED (BAD/MISSING) -> order_id=ORD-10136 | customer_name=Saanvi Tiwari | email_address=EMPTY | phone_number=+91-8207250969
+          └── Reason: email_address: Missing
+[Row 139] REMOVED (BAD/MISSING) -> order_id=ORD-10137 | customer_name=Riya Pandey | email_address=riya.pandey32@yahoo.com | phone_number=+91-8063239503
+          └── Reason: city: Missing
+[Row 140] REMOVED (BAD/MISSING) -> order_id=ORD-10138 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-7400040376
+          └── Reason: customer_name: Missing, email_address: Missing, city: Missing
+[Row 141] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10139 | customer_name=Sunita Yadav | email_address=sunita.yadav88@outlook.com | phone_number=+91-9689420564
+          └── Auto-Fixed: customer_name: sunita yadav -> Sunita Yadav, phone_number: +91-96894-20564 -> +91-9689420564, unit_price_(inr): ₹75,000 -> 75000, total_amount: ₹375,000.00 -> 375000, order_date: 05/16/2025 -> 2025-05-16, order_status: pending -> Pending
+[Row 142] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10140 | customer_name=Riya Gupta | email_address=riya.gupta86@outlook.com | phone_number=+91-8702274064
+          └── Auto-Fixed: phone_number: +91-87022-74064 -> +91-8702274064, unit_price_(inr): ₹3,200 -> 3200, order_date: 07/08/2025 -> 2025-08-07, order_status: COMPLETED -> Completed, total_amount: Calculated 12800
+[Row 143] REMOVED (BAD/MISSING) -> order_id=ORD-10141 | customer_name=Swati Bose | email_address=EMPTY | phone_number=+91-7517946362
+          └── Reason: email_address: Missing
+[Row 144] REMOVED (BAD/MISSING) -> order_id=ORD-10142 | customer_name=Arjun Agarwal | email_address=arjun.agarwal57@yahoo.com | phone_number=+91-7650146942
+          └── Reason: order_date: Missing
+[Row 145] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10143 | customer_name=Kiara Nair | email_address=kiara.nair77@gmail.com | phone_number=+91-9965572185
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91 9965572185 -> +91-9965572185, unit_price_(inr): Rs. 3200 -> 3200, order_date: 03/09/2025 -> 2025-09-03, order_status: completed -> Completed
+[Row 146] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10144 | customer_name=Kavita Das | email_address=kavita.das47@gmail.com | phone_number=+91-9441175185
+          └── Auto-Fixed: phone_number: +91-94411-75185 -> +91-9441175185, city: hyderabad -> Hyderabad, unit_price_(inr): ₹14,500 -> 14500, payment_method: credit card -> Credit Card, total_amount: Calculated 72500
+[Row 147] REMOVED (BAD/MISSING) -> order_id=ORD-10145 | customer_name=Manish Iyer | email_address=manish.iyer55@company.in | phone_number=+91-9304528350
+          └── Reason: order_status: Missing
+[Row 148] REMOVED (BAD/MISSING) -> order_id=ORD-10146 | customer_name=Navya Sen | email_address=navya.sen8@yahoo.com | phone_number=+91-7498158588
+          └── Reason: order_date: Missing
+[Row 149] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10147 | customer_name=Ananya Chopra | email_address=ananya.chopra94@outlook.com | phone_number=+91-7126084156
+          └── Auto-Fixed: customer_name: ananya chopra -> Ananya Chopra, phone_number: 7126084156 -> +91-7126084156, city: patna -> Patna, category: furniture -> Furniture, unit_price_(inr): 18500 -> 18500, order_status: COMPLETED -> Completed, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 150] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10148 | customer_name=Reyansh Sinha | email_address=reyansh.sinha95@yahoo.com | phone_number=+91-7052776893
+          └── Auto-Fixed: phone_number: +91-70527-76893 -> +91-7052776893, city: Bangalore -> Bengaluru, payment_method: credit card -> Credit Card
+[Row 151] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10149 | customer_name=Rahul Nair | email_address=rahul.nair65@gmail.com | phone_number=+91-7958572516
+          └── Auto-Fixed: phone_number: +91-79585-72516 -> +91-7958572516, category: electronics -> Electronics, total_amount: ₹375,000.00 -> 375000, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 152] REMOVED (BAD/MISSING) -> order_id=ORD-10150 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-8992549954
+          └── Reason: customer_name: Missing, email_address: Missing, order_date: Missing
+[Row 153] REMOVED (BAD/MISSING) -> order_id=ORD-10151 | customer_name=Rajesh Chopra | email_address=rajesh.chopra43@gmail.com | phone_number=+91-8320748157
+          └── Reason: order_date: Missing
+[Row 154] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10152 | customer_name=Neha Bhatia | email_address=neha.bhatia65@gmail.com | phone_number=+91-7321394470
+          └── Auto-Fixed: phone_number: 7321394470 -> +91-7321394470, city: pune -> Pune, unit_price_(inr): Rs. 8500 -> 8500, order_date: 07-Feb-2026 -> 2026-02-07
+[Row 155] REMOVED (BAD/MISSING) -> order_id=ORD-10153 | customer_name=Karan Nair | email_address=karan.nair99@yahoo.com | phone_number=+91-7705985174
+          └── Reason: order_status: Missing
+[Row 156] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10154 | customer_name=Suresh Verma | email_address=suresh.verma12@yahoo.com | phone_number=+91-8701857002
+          └── Auto-Fixed: customer_name: SURESH  VERMA -> Suresh Verma, phone_number: 8701857002 -> +91-8701857002
+[Row 157] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10155 | customer_name=Krishna Malhotra | email_address=krishna.malhotra17@yahoo.com | phone_number=+91-9947572742
+          └── Auto-Fixed: customer_name: krishna malhotra -> Krishna Malhotra, phone_number: +91 9947572742 -> +91-9947572742
+[Row 158] REMOVED (BAD/MISSING) -> order_id=ORD-10156 | customer_name=Aditya Bhatia | email_address=aditya.bhatia93@company.in | phone_number=+91-9934377138
+          └── Reason: payment_method: Missing
+[Row 159] REMOVED (BAD/MISSING) -> order_id=ORD-10157 | customer_name=Rohan Sinha | email_address=EMPTY | phone_number=+91-7589424206
+          └── Reason: email_address: Missing, payment_method: Missing
+[Row 160] REMOVED (BAD/MISSING) -> order_id=ORD-10158 | customer_name=Rajesh Jain | email_address=rajesh.jain42@gmail.com | phone_number=+91-8369568735
+          └── Reason: order_date: Missing
+[Row 161] REMOVED (BAD/MISSING) -> order_id=ORD-10159 | customer_name=Kiara Bose | email_address=kiara.bose98@gmail.com | phone_number=+91-8668262032
+          └── Reason: payment_method: Missing
+[Row 162] REMOVED (BAD/MISSING) -> order_id=ORD-10160 | customer_name=Rajesh Iyer | email_address=EMPTY | phone_number=+91-9584122005
+          └── Reason: email_address: Missing
+[Row 163] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10161 | customer_name=Ayaan Pandey | email_address=ayaan.pandey48@gmail.com | phone_number=+91-9516922421
+          └── Auto-Fixed: phone_number: 9516922421 -> +91-9516922421, order_status: refunded -> Refunded
+[Row 164] REMOVED (BAD/MISSING) -> order_id=ORD-10162 | customer_name=Aadhya Bose | email_address=aadhya.bose94@outlook.com | phone_number=+91-7007721941
+          └── Reason: payment_method: Missing
+[Row 165] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10163 | customer_name=Ishaan Joshi | email_address=ishaan.joshi22@outlook.com | phone_number=+91-9877733629
+          └── Auto-Fixed: phone_number: 9877733629 -> +91-9877733629, unit_price_(inr): ₹16,000 -> 16000, total_amount: ₹32,000.00 -> 32000, payment_method: credit card -> Credit Card
+[Row 166] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10164 | customer_name=Ananya Sinha | email_address=ananya.sinha70@outlook.com | phone_number=+91-9482729424
+          └── Auto-Fixed: phone_number: 9482729424 -> +91-9482729424, category: electronics -> Electronics, unit_price_(inr): ₹28,000 -> 28000, total_amount: ₹28,000.00 -> 28000
+[Row 167] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10165 | customer_name=Arjun Chauhan | email_address=arjun.chauhan77@outlook.com | phone_number=+91-7133114792
+          └── Auto-Fixed: phone_number: 7133114792 -> +91-7133114792, city: hyderabad -> Hyderabad, unit_price_(inr): Rs. 4000 -> 4000, order_date: 22-Jul-2026 -> 2026-07-22, order_status: refunded -> Refunded, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 168] REMOVED (BAD/MISSING) -> order_id=ORD-10166 | customer_name=Anika Iyer | email_address=EMPTY | phone_number=EMPTY
+          └── Reason: email_address: Missing, phone_number: Missing
+[Row 169] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10167 | customer_name=Siddharth Pandey | email_address=siddharth.pandey63@company.in | phone_number=+91-9756795104
+          └── Auto-Fixed: customer_name: siddharth pandey -> Siddharth Pandey, phone_number: +91 9756795104 -> +91-9756795104, unit_price_(inr): 18500 -> 18500, order_date: 08/20/2025 -> 2025-08-20
+[Row 170] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10168 | customer_name=Ishaan Kulkarni | email_address=ishaan.kulkarni70@outlook.com | phone_number=+91-7977159856
+          └── Auto-Fixed: phone_number: 7977159856 -> +91-7977159856, order_date: 30/08/2025 -> 2025-08-30, order_status: completed -> Completed, payment_method: credit card -> Credit Card
+[Row 171] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10169 | customer_name=Aditya Agarwal | email_address=aditya.agarwal87@gmail.com | phone_number=+91-8928610987
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-89286-10987 -> +91-8928610987, city: delhi -> Delhi, unit_price_(inr): 4000 -> 4000, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 172] REMOVED (BAD/MISSING) -> order_id=ORD-10170 | customer_name=Rahul Thakur | email_address=rahul.thakur50@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, quantity: Missing, total_amount: Missing
+[Row 173] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10171 | customer_name=Reyansh Yadav | email_address=reyansh.yadav45@gmail.com | phone_number=+91-9812291645
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91 9812291645 -> +91-9812291645, city: chennai -> Chennai, category: storage -> Storage, unit_price_(inr): ₹8,500 -> 8500, order_date: 09/02/2025 -> 2025-02-09
+[Row 174] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10172 | customer_name=Vihaan Rao | email_address=vihaan.rao3@outlook.com | phone_number=+91-8335517080
+          └── Auto-Fixed: phone_number: 8335517080 -> +91-8335517080, city: bengaluru -> Bengaluru, unit_price_(inr): Rs. 32000 -> 32000
+[Row 175] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10173 | customer_name=Pari Bhatia | email_address=pari.bhatia98@company.in | phone_number=+91-7241402174
+          └── Auto-Fixed: customer_name: PARI  BHATIA -> Pari Bhatia, phone_number: +91 7241402174 -> +91-7241402174
+[Row 176] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10174 | customer_name=Kiara Verma | email_address=kiara.verma36@yahoo.com | phone_number=+91-8704854104
+          └── Auto-Fixed: phone_number: 8704854104 -> +91-8704854104, unit_price_(inr): 1700 -> 1700, order_date: 19/07/2026 -> 2026-07-19, order_status: COMPLETED -> Completed, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 177] REMOVED (BAD/MISSING) -> order_id=ORD-10175 | customer_name=Sai Iyer | email_address=EMPTY | phone_number=+91-7920491305
+          └── Reason: email_address: Missing
+[Row 178] REMOVED (BAD/MISSING) -> order_id=ORD-10176 | customer_name=Suresh Jain | email_address=suresh.jain92@outlook.com | phone_number=+91-8820236332
+          └── Reason: unit_price_(inr): Missing, order_status: Missing
+[Row 179] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10177 | customer_name=Sunita Das | email_address=sunita.das62@gmail.com | phone_number=+91-9751333497
+          └── Auto-Fixed: phone_number: 9751333497 -> +91-9751333497, city: patna -> Patna, unit_price_(inr): ₹2,200 -> 2200, order_date: 07/09/2026 -> 2026-09-07
+[Row 180] REMOVED (BAD/MISSING) -> order_id=ORD-10178 | customer_name=Vivaan Das | email_address=vivaan.das52@company.in | phone_number=+91-9456903534
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 181] REMOVED (BAD/MISSING) -> order_id=ORD-10179 | customer_name=Anika Malhotra | email_address=anika.malhotra98@gmail.com | phone_number=+91-8441530442
+          └── Reason: payment_method: Missing
+[Row 182] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10180 | customer_name=Vihaan Pandey | email_address=vihaan.pandey10@gmail.com | phone_number=+91-7514605529
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-75146-05529 -> +91-7514605529, order_status: COMPLETED -> Completed
+[Row 183] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10181 | customer_name=Kavita Joshi | email_address=kavita.joshi1@gmail.com | phone_number=+91-7724156214
+          └── Auto-Fixed: phone_number: +91-77241-56214 -> +91-7724156214, city: pune -> Pune, order_date: 04/05/2026 -> 2026-05-04
+[Row 184] REMOVED (BAD/MISSING) -> order_id=ORD-10182 | customer_name=Neha Sharma | email_address=neha.sharma25@gmail.com | phone_number=+91-8068687175
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 185] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10183 | customer_name=Divya Rao | email_address=divya.rao88@company.in | phone_number=+91-9105301413
+          └── Auto-Fixed: phone_number: +91 9105301413 -> +91-9105301413, city: PATNA -> Patna, unit_price_(inr): ₹27,500 -> 27500, total_amount: ₹110,000.00 -> 110000, order_date: 23-Jan-2025 -> 2025-01-23, order_status: COMPLETED -> Completed
+[Row 186] REMOVED (BAD/MISSING) -> order_id=ORD-10184 | customer_name=Neha Sen | email_address=EMPTY | phone_number=+91-8098606132
+          └── Reason: email_address: Missing, city: Missing
+[Row 187] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10185 | customer_name=Sunita Nair | email_address=sunita.nair39@gmail.com | phone_number=+91-9234711156
+          └── Auto-Fixed: phone_number: +91-92347-11156 -> +91-9234711156, city: bengaluru -> Bengaluru, total_amount: ₹9,000.00 -> 9000, order_date: 19/04/2025 -> 2025-04-19
+[Row 188] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10186 | customer_name=Myra Tiwari | email_address=myra.tiwari38@company.in | phone_number=+91-7892038856
+          └── Auto-Fixed: phone_number: 7892038856 -> +91-7892038856, category: furniture -> Furniture, total_amount: ₹31,500.00 -> 31500, order_date: 04/03/2025 -> 2025-03-04, order_status: completed -> Completed
+[Row 189] REMOVED (BAD/MISSING) -> order_id=ORD-10187 | customer_name=Myra Das | email_address=myra.das34@outlook.com | phone_number=+91-7750338556
+          └── Reason: order_status: Missing
+[Row 190] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10188 | customer_name=Priya Chopra | email_address=priya.chopra94@outlook.com | phone_number=+91-7785418196
+          └── Auto-Fixed: phone_number: 7785418196 -> +91-7785418196
+[Row 191] REMOVED (BAD/MISSING) -> order_id=ORD-10189 | customer_name=Reyansh Desai | email_address=reyansh.desai87@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, order_status: Missing
+[Row 192] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10190 | customer_name=Aarav Sen | email_address=aarav.sen93@gmail.com | phone_number=+91-9876959590
+          └── Auto-Fixed: email_address: lowercased, phone_number: 9876959590 -> +91-9876959590, city: patna -> Patna, order_status: refunded -> Refunded
+[Row 193] REMOVED (BAD/MISSING) -> order_id=ORD-10191 | customer_name=Aarav Das | email_address=aarav.das64@company.in | phone_number=+91-9111611923
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 194] REMOVED (BAD/MISSING) -> order_id=ORD-10192 | customer_name=Divya Bhatia | email_address=divya.bhatia58@company.in | phone_number=+91-9806215682
+          └── Reason: quantity: Missing, total_amount: Missing, order_date: Missing, order_status: Missing
+[Row 195] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10193 | customer_name=Manish Chauhan | email_address=manish.chauhan47@outlook.com | phone_number=+91-8951890759
+          └── Auto-Fixed: customer_name: MANISH  CHAUHAN -> Manish Chauhan, phone_number: 8951890759 -> +91-8951890759, city: patna -> Patna, unit_price_(inr): 4500 -> 4500, payment_method: Cash on Delivery -> Cash On Delivery, total_amount: Calculated 13500
+[Row 196] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10194 | customer_name=Sunita Agarwal | email_address=sunita.agarwal64@yahoo.com | phone_number=+91-8757546829
+          └── Auto-Fixed: phone_number: 8757546829 -> +91-8757546829, unit_price_(inr): 2200 -> 2200, order_date: 04/21/2025 -> 2025-04-21
+[Row 197] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10195 | customer_name=Karan Bhatia | email_address=karan.bhatia64@yahoo.com | phone_number=+91-9376088968
+          └── Auto-Fixed: phone_number: 9376088968 -> +91-9376088968, city: hyderabad -> Hyderabad, total_amount: ₹9,500.00 -> 9500, order_date: 01-Feb-2026 -> 2026-02-01
+[Row 198] REMOVED (BAD/MISSING) -> order_id=ORD-10196 | customer_name=Manish Sinha | email_address=manish.sinha36@yahoo.com | phone_number=+91-8263465731
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 199] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10197 | customer_name=Pari Patel | email_address=pari.patel87@outlook.com | phone_number=+91-7763699730
+          └── Auto-Fixed: phone_number: 7763699730 -> +91-7763699730, order_date: 04-Mar-2026 -> 2026-03-04, order_status: refunded -> Refunded, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 200] REMOVED (BAD/MISSING) -> order_id=ORD-10198 | customer_name=Sneha Jain | email_address=sneha.jain19@company.in | phone_number=+91-8146662918
+          └── Reason: city: Missing
+[Row 201] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10199 | customer_name=Anita Pandey | email_address=anita.pandey96@yahoo.com | phone_number=+91-9194394567
+          └── Auto-Fixed: phone_number: +91 9194394567 -> +91-9194394567, category: accessories -> Accessories, unit_price_(inr): 2200 -> 2200, order_status: pending -> Pending
+[Row 202] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10200 | customer_name=Anita Pandey | email_address=anita.pandey82@yahoo.com | phone_number=+91-9527095794
+          └── Auto-Fixed: phone_number: 9527095794 -> +91-9527095794, unit_price_(inr): 8500 -> 8500, total_amount: ₹17,000.00 -> 17000, order_date: 27-Jun-2025 -> 2025-06-27, order_status: completed -> Completed, payment_method: credit card -> Credit Card
+[Row 203] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10201 | customer_name=Aditya Desai | email_address=aditya.desai75@yahoo.com | phone_number=+91-9002877824
+          └── Auto-Fixed: customer_name: ADITYA  DESAI -> Aditya Desai, phone_number: +91-90028-77824 -> +91-9002877824, order_date: 10-Aug-2026 -> 2026-08-10, order_status: completed -> Completed
+[Row 204] REMOVED (BAD/MISSING) -> order_id=ORD-10202 | customer_name=Swati Reddy | email_address=swati.reddy21@gmail.com | phone_number=+91-7394903139
+          └── Reason: order_date: Missing, order_status: Missing
+[Row 205] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10203 | customer_name=Ayaan Bose | email_address=ayaan.bose80@gmail.com | phone_number=+91-8378413965
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-83784-13965 -> +91-8378413965, order_date: 05/06/2026 -> 2026-06-05, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 206] REMOVED (BAD/MISSING) -> order_id=ORD-10204 | customer_name=Pari Joshi | email_address=pari.joshi99@yahoo.com | phone_number=+91-7281199333
+          └── Reason: unit_price_(inr): Missing
+[Row 207] REMOVED (BAD/MISSING) -> order_id=ORD-10205 | customer_name=Vivaan Bhatia | email_address=EMPTY | phone_number=+91-7764470510
+          └── Reason: email_address: Missing
+[Row 208] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10206 | customer_name=Anita Gupta | email_address=anita.gupta46@gmail.com | phone_number=+91-9945826425
+          └── Auto-Fixed: phone_number: +91-99458-26425 -> +91-9945826425, unit_price_(inr): Rs. 8500 -> 8500, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 209] REMOVED (BAD/MISSING) -> order_id=ORD-10207 | customer_name=Ishaan Iyer | email_address=ishaan.iyer2@outlook.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, quantity: Missing, total_amount: Missing, order_status: Missing
+[Row 210] REMOVED (BAD/MISSING) -> order_id=ORD-10208 | customer_name=Ananya Kumar | email_address=ananya.kumar15@yahoo.com | phone_number=+91-7233595980
+          └── Reason: city: Missing
+[Row 211] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10209 | customer_name=Krishna Bose | email_address=krishna.bose9@gmail.com | phone_number=+91-8935509747
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91 8935509747 -> +91-8935509747, city: patna -> Patna
+[Row 212] REMOVED (BAD/MISSING) -> order_id=ORD-10210 | customer_name=Sneha Nair | email_address=sneha.nair62@outlook.com | phone_number=+91-8311991364
+          └── Reason: order_status: Missing
+[Row 213] REMOVED (BAD/MISSING) -> order_id=ORD-10211 | customer_name=Arjun Sinha | email_address=arjun.sinha75@gmail.com | phone_number=+91-7913800164
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 214] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10212 | customer_name=Krishna Bhatia | email_address=krishna.bhatia65@outlook.com | phone_number=+91-9637264426
+          └── Auto-Fixed: phone_number: +91-96372-64426 -> +91-9637264426, order_date: 30-May-2025 -> 2025-05-30
+[Row 215] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10213 | customer_name=Aditya Reddy | email_address=aditya.reddy48@outlook.com | phone_number=+91-9224300124
+          └── Auto-Fixed: phone_number: 9224300124 -> +91-9224300124, city: PATNA -> Patna, order_date: 18-Jun-2026 -> 2026-06-18, order_status: pending -> Pending, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 216] REMOVED (BAD/MISSING) -> order_id=ORD-10214 | customer_name=Meena Chauhan | email_address=meena.chauhan47@company.in | phone_number=+91-7334309386
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 217] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10215 | customer_name=Manish Sinha | email_address=manish.sinha66@gmail.com | phone_number=+91-7802753761
+          └── Auto-Fixed: customer_name: manish sinha -> Manish Sinha, phone_number: +91-78027-53761 -> +91-7802753761, city: delhi -> Delhi, order_date: 06/05/2026 -> 2026-05-06
+[Row 218] REMOVED (BAD/MISSING) -> order_id=ORD-10216 | customer_name=Rohan Sharma | email_address=rohan.sharma21@gmail.com | phone_number=+91-9457877922
+          └── Reason: quantity: Missing, total_amount: Missing, order_status: Missing
+[Row 219] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10217 | customer_name=Sai Patel | email_address=sai.patel22@company.in | phone_number=+91-7612943949
+          └── Auto-Fixed: phone_number: +91 7612943949 -> +91-7612943949, city: pune -> Pune
+[Row 220] REMOVED (BAD/MISSING) -> order_id=ORD-10218 | customer_name=Reyansh Sharma | email_address=reyansh.sharma88@gmail.com | phone_number=+91-7413599241
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 221] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10219 | customer_name=Sneha Agarwal | email_address=sneha.agarwal55@gmail.com | phone_number=+91-8637398296
+          └── Auto-Fixed: email_address: lowercased, phone_number: 8637398296 -> +91-8637398296, city: PATNA -> Patna, unit_price_(inr): ₹8,500 -> 8500, total_amount: ₹8,500.00 -> 8500, order_status: refunded -> Refunded, payment_method: credit card -> Credit Card
+[Row 222] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10220 | customer_name=Myra Patel | email_address=myra.patel74@gmail.com | phone_number=+91-8610741069
+          └── Auto-Fixed: customer_name: myra patel -> Myra Patel, phone_number: 8610741069 -> +91-8610741069, unit_price_(inr): ₹27,500 -> 27500, order_date: 03/07/2026 -> 2026-07-03, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 223] REMOVED (BLANK ROW)   -> All cells are empty
+[Row 224] REMOVED (BAD/MISSING) -> order_id=ORD-10221 | customer_name=Pooja Kulkarni | email_address=pooja.kulkarni62@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing
+[Row 225] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10222 | customer_name=Saanvi Agarwal | email_address=saanvi.agarwal79@gmail.com | phone_number=+91-7690364509
+          └── Auto-Fixed: email_address: lowercased, phone_number: 7690364509 -> +91-7690364509, unit_price_(inr): 75500 -> 75500, order_date: 16/08/2025 -> 2025-08-16, total_amount: Calculated 377500
+[Row 226] REMOVED (BAD/MISSING) -> order_id=ORD-10223 | customer_name=Vikram Thakur | email_address=vikram.thakur37@gmail.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, quantity: Missing, total_amount: Missing
+[Row 227] REMOVED (BAD/MISSING) -> order_id=ORD-10224 | customer_name=Aditya Chopra | email_address=EMPTY | phone_number=+91-8185139825
+          └── Reason: email_address: Missing, city: Missing
+[Row 228] REMOVED (BAD/MISSING) -> order_id=ORD-10225 | customer_name=Amit Tiwari | email_address=amit.tiwari59@yahoo.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing, quantity: Missing, total_amount: Missing
+[Row 229] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10226 | customer_name=Karan Mehta | email_address=karan.mehta59@outlook.com | phone_number=+91-7117470362
+          └── Auto-Fixed: phone_number: 7117470362 -> +91-7117470362, city: chennai -> Chennai, order_date: 28/12/2025 -> 2025-12-28, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 230] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10227 | customer_name=Kiara Iyer | email_address=kiara.iyer10@outlook.com | phone_number=+91-8348073339
+          └── Auto-Fixed: customer_name: kiara iyer -> Kiara Iyer, phone_number: +91-83480-73339 -> +91-8348073339, city: PATNA -> Patna, total_amount: ₹56,000.00 -> 56000
+[Row 231] REMOVED (BAD/MISSING) -> order_id=ORD-10228 | customer_name=Anita Chopra | email_address=anita.chopra87@gmail.com | phone_number=+91-7028448463
+          └── Reason: city: Missing
+[Row 232] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10229 | customer_name=Manish Nair | email_address=manish.nair7@yahoo.com | phone_number=+91-9322580659
+          └── Auto-Fixed: phone_number: +91 9322580659 -> +91-9322580659, city: mumbai -> Mumbai, payment_method: credit card -> Credit Card
+[Row 233] REMOVED (BAD/MISSING) -> order_id=ORD-10230 | customer_name=EMPTY | email_address=EMPTY | phone_number=EMPTY
+          └── Reason: customer_name: Missing, email_address: Missing, phone_number: Missing
+[Row 234] REMOVED (BAD/MISSING) -> order_id=ORD-10231 | customer_name=Karan Kumar | email_address=karan.kumar13@yahoo.com | phone_number=+91-9385167359
+          └── Reason: payment_method: Missing
+[Row 235] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10232 | customer_name=Navya Nair | email_address=navya.nair13@company.in | phone_number=+91-8092165878
+          └── Auto-Fixed: phone_number: +91-80921-65878 -> +91-8092165878, city: chennai -> Chennai, order_date: 21/01/2025 -> 2025-01-21
+[Row 236] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10233 | customer_name=Deepak Yadav | email_address=deepak.yadav46@outlook.com | phone_number=+91-8919550221
+          └── Auto-Fixed: phone_number: 8919550221 -> +91-8919550221, city: MUMBAI -> Mumbai, order_date: 20-Sep-2026 -> 2026-09-20, order_status: completed -> Completed
+[Row 237] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10234 | customer_name=Ananya Joshi | email_address=ananya.joshi91@outlook.com | phone_number=+91-8165001700
+          └── Auto-Fixed: customer_name: ANANYA  JOSHI -> Ananya Joshi, phone_number: 8165001700 -> +91-8165001700, unit_price_(inr): ₹15,000 -> 15000, total_amount: ₹75,000.00 -> 75000, order_date: 29-Aug-2025 -> 2025-08-29, order_status: completed -> Completed
+[Row 238] REMOVED (BAD/MISSING) -> order_id=ORD-10235 | customer_name=Ananya Mehta | email_address=EMPTY | phone_number=+91-9355504998
+          └── Reason: email_address: Missing
+[Row 239] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10236 | customer_name=Karan Das | email_address=karan.das4@yahoo.com | phone_number=+91-8396729008
+          └── Auto-Fixed: customer_name: karan das -> Karan Das, phone_number: +91 8396729008 -> +91-8396729008, city: chennai -> Chennai, unit_price_(inr): 32500 -> 32500, order_date: 01-Jul-2025 -> 2025-07-01, payment_method: credit card -> Credit Card
+[Row 240] REMOVED (BAD/MISSING) -> order_id=ORD-10237 | customer_name=Swati Das | email_address=swati.das62@outlook.com | phone_number=+91-8897775581
+          └── Reason: unit_price_(inr): Missing, payment_method: Missing
+[Row 241] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10238 | customer_name=Siddharth Iyer | email_address=siddharth.iyer77@outlook.com | phone_number=+91-8604788242
+          └── Auto-Fixed: customer_name: siddharth iyer -> Siddharth Iyer, phone_number: +91-86047-88242 -> +91-8604788242
+[Row 242] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10239 | customer_name=Swati Kulkarni | email_address=swati.kulkarni37@outlook.com | phone_number=+91-8154581796
+          └── Auto-Fixed: phone_number: 8154581796 -> +91-8154581796, city: hyderabad -> Hyderabad, order_date: 30/09/2026 -> 2026-09-30
+[Row 243] REMOVED (BAD/MISSING) -> order_id=ORD-10240 | customer_name=Ishaan Verma | email_address=EMPTY | phone_number=+91-8211672712
+          └── Reason: email_address: Missing
+[Row 244] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10241 | customer_name=Divya Sen | email_address=divya.sen8@yahoo.com | phone_number=+91-9332991673
+          └── Auto-Fixed: phone_number: +91 9332991673 -> +91-9332991673, city: chennai -> Chennai, unit_price_(inr): ₹4,000 -> 4000, total_amount: ₹16,000.00 -> 16000
+[Row 245] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10242 | customer_name=Divya Rao | email_address=divya.rao61@yahoo.com | phone_number=+91-8387545832
+          └── Auto-Fixed: phone_number: 8387545832 -> +91-8387545832, city: delhi -> Delhi, unit_price_(inr): 75000 -> 75000, order_date: 02/23/2025 -> 2025-02-23
+[Row 246] REMOVED (BAD/MISSING) -> order_id=ORD-10243 | customer_name=Kiara Das | email_address=EMPTY | phone_number=+91-9511253899
+          └── Reason: email_address: Missing
+[Row 247] REMOVED (BAD/MISSING) -> order_id=ORD-10244 | customer_name=Kavita Gupta | email_address=kavita.gupta8@gmail.com | phone_number=+91-9303619991
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 248] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10245 | customer_name=Amit Rao | email_address=amit.rao91@company.in | phone_number=+91-9993754459
+          └── Auto-Fixed: customer_name: amit rao -> Amit Rao, phone_number: +91 9993754459 -> +91-9993754459, city: chennai -> Chennai, unit_price_(inr): 29000 -> 29000, order_status: refunded -> Refunded
+[Row 249] REMOVED (BAD/MISSING) -> order_id=ORD-10246 | customer_name=Karan Iyer | email_address=karan.iyer1@company.in | phone_number=+91-7796863703
+          └── Reason: order_status: Missing, payment_method: Missing
+[Row 250] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10247 | customer_name=Sunita Singh | email_address=sunita.singh15@outlook.com | phone_number=+91-7188021892
+          └── Auto-Fixed: phone_number: 7188021892 -> +91-7188021892, city: New Delhi -> Delhi, unit_price_(inr): ₹4,500 -> 4500, order_date: 17/05/2026 -> 2026-05-17, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 251] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10248 | customer_name=Vihaan Chopra | email_address=vihaan.chopra27@gmail.com | phone_number=+91-7343411869
+          └── Auto-Fixed: customer_name: VIHAAN  CHOPRA -> Vihaan Chopra, phone_number: 7343411869 -> +91-7343411869, total_amount: Calculated 300000
+[Row 252] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10249 | customer_name=Navya Gupta | email_address=navya.gupta13@gmail.com | phone_number=+91-7813726301
+          └── Auto-Fixed: phone_number: 7813726301 -> +91-7813726301, total_amount: ₹4,000.00 -> 4000, order_date: 14/08/2026 -> 2026-08-14, payment_method: credit card -> Credit Card
+[Row 253] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10250 | customer_name=Reyansh Kumar | email_address=reyansh.kumar44@gmail.com | phone_number=+91-9576618444
+          └── Auto-Fixed: email_address: lowercased, phone_number: 9576618444 -> +91-9576618444, unit_price_(inr): 15000 -> 15000, order_date: 28-Nov-2025 -> 2025-11-28
+[Row 254] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10251 | customer_name=Vikram Kulkarni | email_address=vikram.kulkarni58@outlook.com | phone_number=+91-7148876024
+          └── Auto-Fixed: phone_number: +91 7148876024 -> +91-7148876024, unit_price_(inr): Rs. 8000 -> 8000, order_date: 01/23/2025 -> 2025-01-23, order_status: pending -> Pending
+[Row 255] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10252 | customer_name=Reyansh Verma | email_address=reyansh.verma47@outlook.com | phone_number=+91-8100558894
+          └── Auto-Fixed: phone_number: +91-81005-58894 -> +91-8100558894, unit_price_(inr): ₹2,200 -> 2200, order_date: 05/15/2026 -> 2026-05-15
+[Row 256] REMOVED (BAD/MISSING) -> order_id=ORD-10253 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-9475119635
+          └── Reason: customer_name: Missing, email_address: Missing
+[Row 257] REMOVED (BAD/MISSING) -> order_id=ORD-10254 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-9318980522
+          └── Reason: customer_name: Missing, email_address: Missing
+[Row 258] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10255 | customer_name=Sneha Iyer | email_address=sneha.iyer11@outlook.com | phone_number=+91-9354296652
+          └── Auto-Fixed: phone_number: 9354296652 -> +91-9354296652, unit_price_(inr): 2200 -> 2200
+[Row 259] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10256 | customer_name=Kiara Gupta | email_address=kiara.gupta12@gmail.com | phone_number=+91-8568812602
+          └── Auto-Fixed: customer_name: KIARA  GUPTA -> Kiara Gupta, email_address: lowercased, phone_number: +91 8568812602 -> +91-8568812602, city: PATNA -> Patna, unit_price_(inr): ₹28,000 -> 28000, order_date: 29-Mar-2026 -> 2026-03-29
+[Row 260] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10257 | customer_name=Aadhya Patel | email_address=aadhya.patel15@gmail.com | phone_number=+91-9667185159
+          └── Auto-Fixed: phone_number: +91-96671-85159 -> +91-9667185159, city: New Delhi -> Delhi, unit_price_(inr): 2200 -> 2200, order_date: 03-Aug-2025 -> 2025-08-03, total_amount: Calculated 2200
+[Row 261] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10258 | customer_name=Rajesh Agarwal | email_address=rajesh.agarwal94@gmail.com | phone_number=+91-9870157362
+          └── Auto-Fixed: email_address: lowercased, phone_number: 9870157362 -> +91-9870157362, unit_price_(inr): ₹18,500 -> 18500
+[Row 262] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10259 | customer_name=Arjun Mehta | email_address=arjun.mehta14@outlook.com | phone_number=+91-9789199634
+          └── Auto-Fixed: phone_number: 9789199634 -> +91-9789199634, unit_price_(inr): 28000 -> 28000, total_amount: ₹28,000.00 -> 28000, order_date: 23/07/2025 -> 2025-07-23
+[Row 263] REMOVED (BLANK ROW)   -> All cells are empty
+[Row 264] REMOVED (BAD/MISSING) -> order_id=ORD-10260 | customer_name=Aditya Reddy | email_address=aditya.reddy51@company.in | phone_number=+91-9939094899
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 265] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10261 | customer_name=Sunita Nair | email_address=sunita.nair85@company.in | phone_number=+91-9236466111
+          └── Auto-Fixed: customer_name: SUNITA  NAIR -> Sunita Nair, phone_number: 9236466111 -> +91-9236466111, order_date: 12/09/2026 -> 2026-09-12, order_status: refunded -> Refunded
+[Row 266] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10262 | customer_name=Saanvi Das | email_address=saanvi.das18@yahoo.com | phone_number=+91-9249727410
+          └── Auto-Fixed: customer_name: saanvi das -> Saanvi Das, phone_number: 9249727410 -> +91-9249727410, city: New Delhi -> Delhi, order_date: 25/07/2026 -> 2026-07-25, order_status: completed -> Completed
+[Row 267] REMOVED (BAD/MISSING) -> order_id=ORD-10263 | customer_name=Rahul Tiwari | email_address=rahul.tiwari53@outlook.com | phone_number=+91-9735238728
+          └── Reason: city: Missing
+[Row 268] REMOVED (BAD/MISSING) -> order_id=ORD-10264 | customer_name=Aadhya Bose | email_address=EMPTY | phone_number=+91-7575897664
+          └── Reason: email_address: Missing
+[Row 269] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10265 | customer_name=Rohan Reddy | email_address=rohan.reddy9@yahoo.com | phone_number=+91-8886715571
+          └── Auto-Fixed: phone_number: 8886715571 -> +91-8886715571, unit_price_(inr): 32000 -> 32000, order_date: 25-Jan-2026 -> 2026-01-25, total_amount: Calculated 64000
+[Row 270] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10266 | customer_name=Swati Malhotra | email_address=swati.malhotra32@gmail.com | phone_number=+91-7168584421
+          └── Auto-Fixed: phone_number: +91 7168584421 -> +91-7168584421, unit_price_(inr): Rs. 18500 -> 18500, order_date: 20/10/2025 -> 2025-10-20, payment_method: Cash on Delivery -> Cash On Delivery
+[Row 271] REMOVED (BAD/MISSING) -> order_id=ORD-10267 | customer_name=Anita Thakur | email_address=anita.thakur60@yahoo.com | phone_number=+91-9150308852
+          └── Reason: quantity: Missing, total_amount: Missing, payment_method: Missing
+[Row 272] REMOVED (BAD/MISSING) -> order_id=ORD-10268 | customer_name=Meena Sinha | email_address=meena.sinha12@company.in | phone_number=+91-7704348972
+          └── Reason: unit_price_(inr): Missing
+[Row 273] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10269 | customer_name=Sunita Mehta | email_address=sunita.mehta73@outlook.com | phone_number=+91-7696317695
+          └── Auto-Fixed: customer_name: sunita mehta -> Sunita Mehta, phone_number: 7696317695 -> +91-7696317695, city: New Delhi -> Delhi, category: accessories -> Accessories, order_status: COMPLETED -> Completed
+[Row 274] REMOVED (BAD/MISSING) -> order_id=ORD-10270 | customer_name=Aarav Mishra | email_address=EMPTY | phone_number=+91-9141652101
+          └── Reason: email_address: Missing
+[Row 275] REMOVED (BAD/MISSING) -> order_id=ORD-10271 | customer_name=Anita Das | email_address=anita.das24@gmail.com | phone_number=+91-7157715720
+          └── Reason: order_date: Missing
+[Row 276] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10272 | customer_name=Anita Bose | email_address=anita.bose23@gmail.com | phone_number=+91-8546998451
+          └── Auto-Fixed: email_address: lowercased, phone_number: 8546998451 -> +91-8546998451, city: mumbai -> Mumbai, total_amount: ₹2,800.00 -> 2800, order_status: pending -> Pending
+[Row 277] REMOVED (BAD/MISSING) -> order_id=ORD-10273 | customer_name=Swati Desai | email_address=swati.desai8@gmail.com | phone_number=+91-9701442510
+          └── Reason: payment_method: Missing
+[Row 278] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10274 | customer_name=Swati Rao | email_address=swati.rao79@yahoo.com | phone_number=+91-7831314297
+          └── Auto-Fixed: phone_number: +91 7831314297 -> +91-7831314297
+[Row 279] REMOVED (BAD/MISSING) -> order_id=ORD-10275 | customer_name=Aarav Das | email_address=aarav.das40@gmail.com | phone_number=+91-7026333597
+          └── Reason: order_date: Missing
+[Row 280] REMOVED (BAD/MISSING) -> order_id=ORD-10276 | customer_name=Siddharth Singh | email_address=siddharth.singh43@gmail.com | phone_number=+91-7240613868
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 281] REMOVED (BLANK ROW)   -> All cells are empty
+[Row 282] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10277 | customer_name=Ishaan Nair | email_address=ishaan.nair81@company.in | phone_number=+91-9601414829
+          └── Auto-Fixed: phone_number: +91-96014-14829 -> +91-9601414829, order_date: 30/03/2025 -> 2025-03-30
+[Row 283] REMOVED (BAD/MISSING) -> order_id=ORD-10278 | customer_name=Karan Tiwari | email_address=karan.tiwari23@outlook.com | phone_number=+91-7868006057
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 284] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10279 | customer_name=Rahul Singh | email_address=rahul.singh87@gmail.com | phone_number=+91-7156991958
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91-71569-91958 -> +91-7156991958, order_date: 31/03/2025 -> 2025-03-31
+[Row 285] REMOVED (BAD/MISSING) -> order_id=ORD-10280 | customer_name=Swati Kulkarni | email_address=swati.kulkarni98@gmail.com | phone_number=+91-8378170698
+          └── Reason: order_date: Missing
+[Row 286] REMOVED (BAD/MISSING) -> order_id=ORD-10281 | customer_name=Saanvi Chauhan | email_address=saanvi.chauhan91@yahoo.com | phone_number=EMPTY
+          └── Reason: phone_number: Missing
+[Row 287] REMOVED (BAD/MISSING) -> order_id=ORD-10282 | customer_name=Pooja Kumar | email_address=pooja.kumar79@company.in | phone_number=+91-7851035458
+          └── Reason: payment_method: Missing
+[Row 288] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10283 | customer_name=Siddharth Reddy | email_address=siddharth.reddy34@gmail.com | phone_number=+91-9856929012
+          └── Auto-Fixed: email_address: lowercased, phone_number: +91 9856929012 -> +91-9856929012, city: patna -> Patna, category: audio -> Audio, unit_price_(inr): Rs. 14500 -> 14500, total_amount: ₹72,500.00 -> 72500, order_date: 23-Dec-2025 -> 2025-12-23, order_status: COMPLETED -> Completed
+[Row 289] REMOVED (BAD/MISSING) -> order_id=ORD-10284 | customer_name=Pooja Tiwari | email_address=pooja.tiwari84@gmail.com | phone_number=+91-8979871930
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 290] REMOVED (BAD/MISSING) -> order_id=ORD-10285 | customer_name=Sneha Yadav | email_address=sneha.yadav23@yahoo.com | phone_number=+91-9466119912
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 291] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10286 | customer_name=Suresh Malhotra | email_address=suresh.malhotra42@company.in | phone_number=+91-7388836304
+          └── Auto-Fixed: phone_number: 7388836304 -> +91-7388836304, order_date: 23-Sep-2026 -> 2026-09-23
+[Row 292] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10287 | customer_name=Rahul Iyer | email_address=rahul.iyer56@outlook.com | phone_number=+91-7383486488
+          └── Auto-Fixed: phone_number: 7383486488 -> +91-7383486488, city: pune -> Pune, unit_price_(inr): ₹75,000 -> 75000, order_date: 01-Jan-2025 -> 2025-01-01
+[Row 293] REMOVED (BAD/MISSING) -> order_id=ORD-10288 | customer_name=Anika Pandey | email_address=anika.pandey51@gmail.com | phone_number=+91-8743896971
+          └── Reason: order_status: Missing
+[Row 294] REMOVED (BAD/MISSING) -> order_id=ORD-10289 | customer_name=Krishna Sharma | email_address=EMPTY | phone_number=+91-9090366319
+          └── Reason: email_address: Missing, order_date: Missing
+[Row 295] REMOVED (BAD/MISSING) -> order_id=ORD-10290 | customer_name=Divya Agarwal | email_address=divya.agarwal46@company.in | phone_number=+91-7031911578
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 296] REMOVED (BAD/MISSING) -> order_id=ORD-10291 | customer_name=Deepak Saxena | email_address=deepak.saxena89@company.in | phone_number=+91-9260905359
+          └── Reason: city: Missing
+[Row 297] REMOVED (BAD/MISSING) -> order_id=ORD-10292 | customer_name=Anita Verma | email_address=anita.verma61@gmail.com | phone_number=+91-9465162177
+          └── Reason: city: Missing
+[Row 298] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10293 | customer_name=Vihaan Das | email_address=vihaan.das85@gmail.com | phone_number=+91-9681421120
+          └── Auto-Fixed: phone_number: 9681421120 -> +91-9681421120, unit_price_(inr): Rs. 2200 -> 2200, order_status: completed -> Completed
+[Row 299] REMOVED (BAD/MISSING) -> order_id=ORD-10294 | customer_name=Meena Rao | email_address=meena.rao34@yahoo.com | phone_number=+91-7776569551
+          └── Reason: payment_method: Missing
+[Row 300] REMOVED (BAD/MISSING) -> order_id=ORD-10295 | customer_name=Ananya Patel | email_address=ananya.patel83@gmail.com | phone_number=+91-7225585432
+          └── Reason: quantity: Missing, total_amount: Missing
+[Row 301] REMOVED (BAD/MISSING) -> order_id=ORD-10296 | customer_name=Aarav Iyer | email_address=aarav.iyer68@outlook.com | phone_number=+91-9281887562
+          └── Reason: order_status: Missing
+[Row 302] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10297 | customer_name=Meena Kulkarni | email_address=meena.kulkarni41@yahoo.com | phone_number=+91-7291851443
+          └── Auto-Fixed: customer_name: MEENA  KULKARNI -> Meena Kulkarni, phone_number: 7291851443 -> +91-7291851443, category: furniture -> Furniture, unit_price_(inr): ₹18,500 -> 18500, total_amount: ₹92,500.00 -> 92500, order_date: 25-Jan-2025 -> 2025-01-25
+[Row 303] REMOVED (BAD/MISSING) -> order_id=ORD-10298 | customer_name=Suresh Das | email_address=suresh.das78@gmail.com | phone_number=+91-9782734390
+          └── Reason: order_status: Missing
+[Row 304] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10299 | customer_name=Myra Kumar | email_address=myra.kumar49@gmail.com | phone_number=+91-8109126346
+          └── Auto-Fixed: phone_number: 8109126346 -> +91-8109126346, city: bengaluru -> Bengaluru, unit_price_(inr): Rs. 5000 -> 5000, total_amount: ₹10,000.00 -> 10000, order_date: 07/08/2026 -> 2026-08-07
+[Row 305] REMOVED (BAD/MISSING) -> order_id=ORD-10300 | customer_name=Karan Sen | email_address=EMPTY | phone_number=+91-8076303124
+          └── Reason: email_address: Missing, city: Missing, payment_method: Missing
+[Row 306] REMOVED (BAD/MISSING) -> order_id=ORD-10301 | customer_name=Siddharth Desai | email_address=siddharth.desai70@gmail.com | phone_number=+91-9960354769
+          └── Reason: city: Missing
+[Row 307] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10302 | customer_name=Divya Kulkarni | email_address=divya.kulkarni71@yahoo.com | phone_number=+91-7820352323
+          └── Auto-Fixed: phone_number: +91 7820352323 -> +91-7820352323, unit_price_(inr): ₹18,500 -> 18500
+[Row 308] REMOVED (BAD/MISSING) -> order_id=ORD-10303 | customer_name=Kavita Mehta | email_address=kavita.mehta64@outlook.com | phone_number=+91-8929760035
+          └── Reason: order_date: Missing
+[Row 309] REMOVED (BAD/MISSING) -> order_id=ORD-10304 | customer_name=Meena Reddy | email_address=EMPTY | phone_number=+91-9808185031
+          └── Reason: email_address: Missing
+[Row 310] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10305 | customer_name=Divya Mishra | email_address=divya.mishra15@gmail.com | phone_number=+91-7947351792
+          └── Auto-Fixed: customer_name: DIVYA  MISHRA -> Divya Mishra, phone_number: 7947351792 -> +91-7947351792, city: MUMBAI -> Mumbai, unit_price_(inr): ₹28,000 -> 28000, order_date: 11/26/2025 -> 2025-11-26
+[Row 311] REMOVED (BAD/MISSING) -> order_id=ORD-10306 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-7606607450
+          └── Reason: customer_name: Missing, email_address: Missing, city: Missing
+[Row 312] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10307 | customer_name=Kavita Gupta | email_address=kavita.gupta91@gmail.com | phone_number=+91-8787660912
+          └── Auto-Fixed: customer_name: kavita gupta -> Kavita Gupta, phone_number: 8787660912 -> +91-8787660912, unit_price_(inr): 32500 -> 32500, total_amount: ₹65,000.00 -> 65000, order_date: 08-Feb-2025 -> 2025-02-08
+[Row 313] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10308 | customer_name=Navya Chopra | email_address=navya.chopra16@yahoo.com | phone_number=+91-9658245206
+          └── Auto-Fixed: phone_number: 9658245206 -> +91-9658245206, city: PATNA -> Patna, unit_price_(inr): ₹3,500 -> 3500, total_amount: ₹7,000.00 -> 7000, order_date: 01/05/2026 -> 2026-05-01, order_status: COMPLETED -> Completed
+[Row 314] REMOVED (BLANK ROW)   -> All cells are empty
+[Row 315] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10309 | customer_name=Vihaan Das | email_address=vihaan.das43@outlook.com | phone_number=+91-8946254259
+          └── Auto-Fixed: phone_number: 8946254259 -> +91-8946254259, city: mumbai -> Mumbai, total_amount: ₹1,200.00 -> 1200, order_date: 29-Aug-2025 -> 2025-08-29
+[Row 316] INFO: REPAIRED & ACCEPTED -> order_id=ORD-10310 | customer_name=Rohan Patel | email_address=rohan.patel15@yahoo.com | phone_number=+91-8772083970
+          └── Auto-Fixed: phone_number: +91-87720-83970 -> +91-8772083970, category: furniture -> Furniture
+[Row 317] REMOVED (DUPLICATE)   -> order_id=ORD-10235 | customer_name=ananya mehta | email_address=EMPTY | phone_number=9355504998
+[Row 318] REMOVED (DUPLICATE)   -> order_id=ORD-10100 | customer_name=Kiara Verma | email_address=kiara.verma7@yahoo.com | phone_number=+91 9028959334
+[Row 319] REMOVED (DUPLICATE)   -> order_id=ORD-10184 | customer_name=Neha Sen | email_address=EMPTY | phone_number=8098606132
+[Row 320] REMOVED (DUPLICATE)   -> order_id=ORD-10139 | customer_name=sunita yadav | email_address=sunita.yadav88@outlook.com | phone_number=+91-96894-20564
+[Row 321] REMOVED (DUPLICATE)   -> order_id=ORD-10104 | customer_name=Myra Das | email_address=myra.das60@gmail.com | phone_number=+91 9158308965
+[Row 322] REMOVED (DUPLICATE)   -> order_id=ORD-10172 | customer_name=Vihaan Rao | email_address=vihaan.rao3@outlook.com | phone_number=8335517080
+[Row 323] REMOVED (DUPLICATE)   -> order_id=ORD-10066 | customer_name=Vikram Chauhan | email_address=vikram.chauhan10@outlook.com | phone_number=8873548915
+[Row 324] REMOVED (DUPLICATE)   -> order_id=ORD-10017 | customer_name=MANISH  SAXENA | email_address=manish.saxena12@gmail.com | phone_number=7189351213
+[Row 325] REMOVED (DUPLICATE)   -> order_id=ORD-10292 | customer_name=Anita Verma | email_address=anita.verma61@gmail.com | phone_number=9465162177
+[Row 326] REMOVED (DUPLICATE)   -> order_id=ORD-10031 | customer_name=reyansh yadav | email_address=reyansh.yadav51@company.in | phone_number=+91-95430-40948
+[Row 327] REMOVED (DUPLICATE)   -> order_id=ORD-10144 | customer_name=Kavita Das | email_address=kavita.das47@gmail.com | phone_number=+91-94411-75185
+[Row 328] REMOVED (DUPLICATE)   -> order_id=ORD-10070 | customer_name=Karan Thakur | email_address=karan.thakur78@outlook.com | phone_number=+91-72657-45534
+[Row 329] REMOVED (DUPLICATE)   -> order_id=ORD-10057 | customer_name=Krishna Jain | email_address=EMPTY | phone_number=7889734128
+[Row 330] REMOVED (DUPLICATE)   -> order_id=ORD-10239 | customer_name=Swati Kulkarni | email_address=swati.kulkarni37@outlook.com | phone_number=8154581796
+[Row 331] REMOVED (DUPLICATE)   -> order_id=ORD-10215 | customer_name=manish sinha | email_address=manish.sinha66@gmail.com | phone_number=+91-78027-53761
+[Row 332] REMOVED (DUPLICATE)   -> order_id=ORD-10088 | customer_name=EMPTY | email_address=EMPTY | phone_number=+91-79683-87506
+[Row 333] REMOVED (DUPLICATE)   -> order_id=ORD-10176 | customer_name=suresh jain | email_address=suresh.jain92@outlook.com | phone_number=8820236332
+[Row 334] REMOVED (DUPLICATE)   -> order_id=ORD-10113 | customer_name=navya thakur | email_address=navya.thakur96@gmail.com | phone_number=8041929790
+[Row 335] REMOVED (DUPLICATE)   -> order_id=ORD-10152 | customer_name=Neha Bhatia | email_address=neha.bhatia65@gmail.com | phone_number=7321394470
+[Row 336] REMOVED (DUPLICATE)   -> order_id=ORD-10310 | customer_name=Rohan Patel | email_address=rohan.patel15@yahoo.com | phone_number=+91-87720-83970
+[Row 337] REMOVED (DUPLICATE)   -> order_id=ORD-10081 | customer_name=Manish Mehta | email_address=manish.mehta5@outlook.com | phone_number=+91-85331-92415
+[Row 338] REMOVED (DUPLICATE)   -> order_id=ORD-10296 | customer_name=Aarav Iyer | email_address=aarav.iyer68@outlook.com | phone_number=+91-92818-87562
+[Row 339] REMOVED (DUPLICATE)   -> order_id=ORD-10284 | customer_name=Pooja Tiwari | email_address=pooja.tiwari84@GMAIL.COM | phone_number=+91 8979871930
+[Row 340] REMOVED (DUPLICATE)   -> order_id=ORD-10118 | customer_name=Navya Bose | email_address=navya.bose12@gmail.com | phone_number=+91 9044426338
+[Row 341] REMOVED (DUPLICATE)   -> order_id=ORD-10045 | customer_name=Riya Kulkarni | email_address=riya.kulkarni35@GMAIL.COM | phone_number=+91 8282287615
+
+=== CLEANING SUMMARY REPORT ===
+Total Raw Rows Processed  : 340
+✔ Clean Accepted Rows     : 0
+✔ Auto-Repaired / Flagged : 158
+✖ Removed Blank Rows      : 5
+✖ Removed Duplicates      : 25
+✖ Removed Invalid Rows    : 152
+Final Saved Clean Rows    : 158
+Total Quarantined Rows    : 182

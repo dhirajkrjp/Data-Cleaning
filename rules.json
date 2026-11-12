@@ -1,0 +1,62 @@
+{
+    "required_columns": [
+        "order_id",
+        "customer_name",
+        "total_amount"
+    ],
+    "email_keywords": [
+        "email"
+    ],
+    "phone_keywords": [
+        "phone",
+        "mobile",
+        "contact"
+    ],
+    "currency_keywords": [
+        "price",
+        "amount",
+        "cost",
+        "salary",
+        "revenue"
+    ],
+    "quantity_keywords": [
+        "quantity",
+        "qty",
+        "count"
+    ],
+    "date_keywords": [
+        "date",
+        "dob",
+        "created_at"
+    ],
+    "name_keywords": [
+        "customer_name",
+        "full_name",
+        "name"
+    ],
+    "city_keywords": [
+        "city",
+        "location"
+    ],
+    "status_keywords": [
+        "status",
+        "category",
+        "payment_method"
+    ],
+    "city_aliases": {
+        "bangalore": "Bengaluru",
+        "bombay": "Mumbai",
+        "calcutta": "Kolkata",
+        "madras": "Chennai",
+        "new delhi": "Delhi"
+    },
+    "invalid_placeholders": [
+        "unknown",
+        "null",
+        "nan",
+        "n/a",
+        "none",
+        "error",
+        "-"
+    ]
+}
